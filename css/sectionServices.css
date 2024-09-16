@@ -1,0 +1,168 @@
+#services {
+    position: relative;
+    overflow: hidden;
+    background: var(--black-color);
+    z-index: 11;
+
+    padding-block: 0;
+    padding-bottom: 8rem;
+}
+
+#services header {
+    margin-bottom: 8rem;
+}
+
+#services header span.span {
+    font-size: 1.4rem;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 800;
+
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#services header h2 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: #ffffffd9;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+#services .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+}
+
+#services .cards .card {
+    background: #00000060;
+    padding: 3rem;
+    border-radius: 2rem;
+    padding-top: 4rem;
+    position: relative;
+}
+
+#services .cards .card img {
+    width: 10rem;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    animation: icon infinite 4s ease-in-out;
+}
+
+#services .cards .card h3 {
+    font-size: 2.5rem;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 800;
+
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#services .cards .card p {
+    margin-top: 1rem;
+    color: #fffffff0;
+    font-family: var(--interV);
+    font-size: 1.6rem;
+    font-weight: 200;
+    line-height: 1.6;
+}
+
+#services .cards .card p span {
+    color: #ffffffd5;
+    font-weight: 500;
+}
+
+@keyframes icon {
+    50% {
+        transform: translateY(-5px) translate(-50%, 0);
+        filter: drop-shadow(0 0 10px #ffffff34);
+    }
+}
+
+@keyframes iconDesktop {
+    50% {
+        transform: translateY(-5px);
+        filter: drop-shadow(0 0 15px #ffffff3b);
+    }
+}
+
+#services a button {
+    margin-top: 4rem;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    background: var(--gradient);
+    border: none;
+}
+
+  #services a button:hover {
+    filter: brightness(1.15);
+    box-shadow:  12px 12px 25px #140e1e,
+             -12px -12px 25px #1a1228;
+}
+
+@media (min-width: 1080px) {
+    section#services header {
+        margin-bottom: 6rem;
+    }
+    
+    section#services header span.span {
+        font-size: 1.6rem;
+    }
+    
+    section#services header h2 {
+        margin-top: 1rem;
+        font-size: 6rem;
+    }
+
+    section#services .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    section#services .cards .card {
+        padding: 4rem;
+
+        background: linear-gradient(140deg, #4572fa0e, #0000006e, #0000001d,#a482fa15);
+        backdrop-filter: blur(16px) saturate(180%);
+        -webkit-backdrop-filter: blur(16px) saturate(180%);
+        box-shadow:  9px 9px 17px #050215,
+             -9px -9px 17px #07021d;
+    }
+
+    section#services .cards .card:nth-child(1),
+    section#services .cards .card:nth-child(3) {
+        transform: translateY(5rem);
+    }
+
+    section#services .cards .card img {
+        width: 15rem;
+        animation: iconDesktop infinite 4s ease-in-out;
+        position: initial;
+        transform: translate(0, 0);
+    }
+
+    section#services .cards .card h3 {
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+
+    section#services .cards .card p {
+        margin-top: 1.5rem;
+        font-size: 1.8rem;
+    }
+
+    section#services a button {
+        margin-top: 7rem;
+        font-size: 2rem;
+    }
+}

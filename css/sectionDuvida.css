@@ -1,0 +1,143 @@
+#duvida {
+    position: relative;
+    overflow: hidden;
+    background: var(--black-color);
+    z-index: 11;
+}
+
+#duvida img.lines {
+    position: absolute;
+    left: 0;
+    top: 26%;
+    transform: translate(0, -50%);
+    width: 100%;
+    opacity: .4;
+    z-index: -1;
+}
+
+
+#duvida .image img {
+    width: 80%;
+    margin-bottom: 4rem;
+}
+
+#duvida .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#duvida .text h2 {
+    font-size: 3.5rem;
+    line-height: .9;
+    color: #ffffffd9;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+#duvida .text h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+#duvida .text p {
+    color: #cec9db;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+#duvida a button {
+    margin-top: 4rem;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    background: var(--gradient);
+    border: none;
+}
+
+#duvida a button:hover {
+    filter: brightness(1.15);
+    box-shadow:  12px 12px 25px #140e1e15,
+             -12px -12px 25px #1a122819;
+}
+
+@media (min-width: 1080px) {
+    section#duvida {
+        background: var(--black-color);
+    }
+
+    section#duvida .wrapper {
+        padding-inline: 8rem;
+    }
+
+    section#duvida .content {
+        background: linear-gradient(140deg, #06133a, #000014, #000014, #1f0f47);
+
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "A B";
+        align-items: center;
+
+        padding-block: 2rem;
+        border-radius: 4rem 0 4rem 0;
+
+        box-shadow:  20px 20px 60px #050215,
+             -20px -20px 60px #0b0329;
+    }
+
+    section#duvida .text {
+        grid-area: A;
+        text-align: left;
+        align-items: start;
+
+        padding-left: 13rem;
+    }
+
+    section#duvida .text h2 {
+        font-size: 4.5rem;
+        margin-bottom: 2rem;
+    }
+
+    section#duvida .text p {
+        margin-top: 0;
+        font-size: 2.2rem;
+        width: 80%;
+    }
+
+    section#duvida .text a button {
+        font-size: 2rem;
+    }
+
+    section#duvida .image img {
+        margin-bottom: 0;
+        width: 60%;
+
+        animation: image2 infinite ease-in-out 5s;
+    }
+}
+
+@keyframes image2 {
+    50% {
+        transform: translateY(5px);
+        filter: drop-shadow(0 0 30px #ffffff4b);
+    }
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}

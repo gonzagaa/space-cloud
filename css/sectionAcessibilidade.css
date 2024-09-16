@@ -1,0 +1,147 @@
+#acessibilidade {
+    position: relative;
+    overflow: hidden;
+    background: var(--black-color);
+    z-index: 11;
+}
+
+#acessibilidade img.lines {
+    position: absolute;
+    left: 0;
+    top: 28%;
+    transform: translate(0, -50%);
+    width: 100%;
+    opacity: .4;
+    z-index: -1;
+}
+
+#acessibilidade .content {
+    background: var(--gradient);
+    padding: 5rem;
+    border-radius: 4rem 0 4rem 0;
+}
+
+#acessibilidade .image img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#acessibilidade .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#acessibilidade .text h2 {
+    font-size: 3.5rem;
+    color: var(--black-color);
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+#acessibilidade .text h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+#acessibilidade .text p {
+    color: var(--black-color);
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+#acessibilidade a button {
+    margin-top: 4rem;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    background: linear-gradient(to right, #0D0816, #332649);
+    border: none;
+}
+
+#acessibilidade a button:hover {
+    filter: brightness(1.15);
+    box-shadow:  12px 12px 25px #140e1e15,
+             -12px -12px 25px #1a122819;
+}
+
+@media (min-width: 1080px) {
+    section#acessibilidade {
+        background: var(--black-color);
+    }
+
+    section#acessibilidade .wrapper {
+        padding-inline: 8rem;
+    }
+
+    section#acessibilidade .content {
+        background: linear-gradient(140deg, #06133a, #000014, #000014, #1f0f47);
+        box-shadow:  20px 20px 60px #050215,
+             -20px -20px 60px #0b0329;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "A B";
+        align-items: center;
+
+        padding-block: 2rem;
+        border-radius: 4rem 0 4rem 0;
+    }
+
+    section#acessibilidade .text {
+        grid-area: A;
+        text-align: left;
+        align-items: start;
+
+        padding-left: 13rem;
+    }
+
+    section#acessibilidade .text h2 {
+        font-size: 7rem;
+        color: #ffffffd9;
+    }
+
+    section#acessibilidade .text p {
+        color: #cec9db;
+        margin-top: 0;
+        font-size: 2.2rem;
+        width: 80%;
+    }
+
+    section#acessibilidade .text a button {
+        font-size: 2rem;
+        background: var(--gradient);
+    }
+
+    section#acessibilidade .image img {
+        margin-bottom: 0;
+        width: 60%;
+
+        animation: image2 infinite ease-in-out 5s;
+    }
+}
+
+@keyframes image2 {
+    50% {
+        transform: translateY(5px);
+        filter: drop-shadow(0 0 30px #ffffff4b);
+    }
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}

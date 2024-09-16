@@ -1,0 +1,218 @@
+#loja {
+    position: relative;
+    overflow: hidden;
+    background: var(--black-color);
+}
+
+#loja header {
+    margin-bottom: 4rem;
+}
+
+#loja header span.span {
+    font-size: 1.4rem;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 800;
+
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#loja header h2 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: #ffffffd9;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+#loja .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#loja .cards .card {
+    padding: 3rem;
+    border-radius: 2rem;
+
+    backdrop-filter: blur(10px) saturate(110%);
+    -webkit-backdrop-filter: blur(10px) saturate(110%);
+    background: linear-gradient(140deg, #1c103356, #0d08165e, #0000001d,#0d0c2753);
+    border: 3px solid rgba(255, 255, 255, 0.077);
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 10;
+}
+
+#loja .cards .border-card {
+    position: relative;
+    padding: .2rem;
+}
+
+#loja .cards .border-card:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: scale(1);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient);
+    border-radius: 2rem;
+    z-index: 0;
+}
+
+#loja .cards .card.recomendado {
+    background: #0D0816;
+    border: none;
+}
+
+#loja .cards .card span {
+    font-size: 1.4rem;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 800;
+
+    color: var(--blue);
+}
+
+#loja .cards .card.recomendado span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#loja .cards .card h3 {
+    font-size: 6rem;
+    font-family: "Bai Jamjuree", sans-serif;
+    color: #fff;
+
+    margin-bottom: 2rem;
+}
+
+#loja .cards .card h3 span,
+#loja .cards .card.recomendado h3 span {
+    -webkit-background-clip: initial;
+    -webkit-text-fill-color: initial;
+    background: transparent;
+    color: #adadadc2;
+}
+
+#loja .cards .card .topics {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#loja .cards .card .topics p {
+    color: #cec9db;
+    font-size: 1.6rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#loja .cards .card .topics p ion-icon {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: .3rem;
+    background: var(--blue);
+    color: #fff;
+}
+
+#loja .cards .card.recomendado .topics p ion-icon {
+    background: var(--gradient);
+}
+
+#loja .cards .card a button {
+    margin-top: 4rem;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    background: var(--blue);
+    border: none;
+}
+
+#loja .cards .card.recomendado a button {
+    background: var(--gradient);
+}
+
+#loja .cards .card a button:hover {
+    filter: brightness(1.15);
+    box-shadow:  12px 12px 25px #140e1e,
+             -12px -12px 25px #1a1228;
+}
+
+#loja img.lines {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    opacity: .2;
+}
+
+@media (min-width: 1080px) {
+    section#loja header {
+        margin-bottom: 7rem;
+    }
+    
+    section#loja header span.span {
+        font-size: 1.6rem;
+    }
+    
+    section#loja header h2 {
+        margin-top: 1rem;
+        font-size: 6rem;
+    }
+
+    section#loja .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10rem;
+    }
+
+    section#loja .cards .card {
+        padding: 0;
+        padding-block: 5rem;
+
+        transform: scale(.9);
+    }
+
+    section#loja .cards .card.card.recomendado {
+        transform: scale(1);
+    }
+
+    section#loja .cards .card h3 {
+        font-size: 6rem;
+        position: absolute;
+        top: 15%;
+        left: -3%;
+        background: var(--black-color);
+    }
+
+    section#loja .cards .card .topics {
+        margin-top: 12rem;
+        margin-bottom: 2rem;
+        gap: 3rem;
+    }
+
+    section#loja .cards .card .topics p {
+        font-size: 1.8rem;
+    }
+
+} 

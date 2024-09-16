@@ -1,0 +1,253 @@
+  #home {
+    background: var(--black-color);
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    transition: all 200ms ease-in-out;
+
+    cursor: url("../assets/cursor\ white.svg"), auto;
+  }
+
+  #home img.bg-waves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    opacity: 1;
+
+    display: none;
+  }
+
+  #home img.blur {
+    position: absolute;
+    width: 180%;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: .7;
+  }
+
+  #home .content {
+    position: relative;
+    z-index: 1;
+  }
+
+  #home .text {
+    position: relative;
+    z-index: 11;
+  }
+
+  #home span {
+    font-size: 1.5rem;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 800;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    border: 1px solid #ffffff71;
+    padding: .8rem 1.6rem;
+    line-height: 1;
+    border-radius: 2rem;
+
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  #home h1 {
+    background: linear-gradient(140deg, #CFCFCF 60%, #A482FA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    font-size: 3.5rem;
+    font-family: "Bai Jamjuree", sans-serif;
+    text-transform: uppercase;
+
+    margin-bottom: 1rem;
+  }
+
+  #home p {
+    color: #b1afb8;
+    font-size: 1.6rem;
+  }
+
+  #home a button {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    background: var(--gradient);
+    border: none;
+  }
+
+  #home a button:hover {
+    filter: brightness(1.2);
+    box-shadow:  12px 12px 25px #140e1e,
+             -12px -12px 25px #1a1228;
+  }
+
+  #home .card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #home .card img {
+    width: 2rem;
+  }
+
+  #home .card h3 {
+    color: #ffffffaf;
+    font-family: "Bai Jamjuree", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+
+  @media (min-width: 1080px) {
+      header#home {
+        height: 110vh;
+      }
+
+      header#home img.blur {
+        bottom: -8%;
+        width: 175%;
+      }
+
+      header#home .text {
+        margin-top: -10rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      header#home h1 {
+        font-size: 8rem;
+        width: 70%;
+        line-height: 1.1;
+      }
+
+      header#home p {
+        font-size: 1.8rem;
+      }
+
+      header#home a button {
+        margin-top: 4rem;
+        font-size: 2rem; 
+        padding: 1.2rem 3.5rem;
+        border-radius: 5rem;
+      }
+
+      header#home .wrapper {
+        position: relative;
+      }
+
+      header#home .card {
+        position: absolute;
+        padding: 1rem 2rem;
+        z-index: 11;
+
+        backdrop-filter: blur(36px) saturate(200%);
+        -webkit-backdrop-filter: blur(36px) saturate(200%);
+        background: linear-gradient(140deg, #4572fa10, #0000000f, #00000010,#a482fa11);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.125);
+
+        mask-image: linear-gradient(to bottom, #fff 40%, transparent);
+        opacity: .7;
+
+        animation: beneficios infinite ease-in-out 4s;
+      }
+
+      header#home .card img {
+        width: 2rem;
+      }
+
+      header#home .card h3 {
+        font-size: 1.2rem;
+      }
+
+      header#home .card:nth-child(2) {
+        bottom: -60%;
+        left: 0;
+      }
+
+      header#home .card:nth-child(3) {
+        bottom: -70%;
+        left: 13%;
+
+        animation-delay: 1s;
+      }
+
+      header#home .card:nth-child(4) {
+        bottom: -80%;
+        left: 26%;
+
+        animation-delay: 2s;
+      }
+
+      header#home .card:nth-child(5) {
+        bottom: -90%;
+        left: 44%;
+
+        animation-delay: 3s;
+      }
+
+      header#home .card:nth-child(6) {
+        left: 59%;
+        bottom: -80%;
+
+        animation-delay: 2s;
+      }
+
+      header#home .card:nth-child(7) {
+        left: 74%;
+        bottom: -70%;
+
+        animation-delay: 1s;
+      }
+
+      header#home .card:nth-child(8) {
+        width: max-content;
+        left: 91%;
+        bottom: -60%;
+      }
+
+      header#home .card:nth-child(9) {
+        left: 2%;
+        bottom: 60%;
+      }
+
+      header#home .card:nth-child(10) {
+        right: 2%;
+        bottom: 60%;
+      }
+
+  }
+
+  @media (min-width: 1400px) {
+
+  }
+
+  @media (min-width: 2000px) {
+    header#home .circle {
+      top: 1080px;
+    }
+  }
+
+@keyframes beneficios {
+  50% {
+    transform: translateY(-5px);
+    filter: brightness(1.6);
+  }
+}

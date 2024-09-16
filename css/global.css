@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: var(--InterV);
+}
+
+:root {
+  font-size: 62.5%;
+
+  --color-text: #d8d8d8;
+  --gradient-black: linear-gradient(to bottom, #000000, #080808);
+  --gradient: linear-gradient(to right, #4572FA, #A482FA);
+  --black-color: #060219;
+  --black-color2: #0D0816;
+  --blue: #4572FA;
+  --purple: #A482FA;
+
+ 
+  --nav-height: 7.2rem;
+  --interV: 'InterV';
+}  
+
+@font-face {
+  font-family: 'InterV';
+  src: url(../fonts/Inter-V.ttf);
+}
+
+#particles-js {
+  background-color: transparent;
+  opacity: .7;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+section {
+  padding-block: 8rem;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    font-family: var(--InterV);
+    text-align: center;
+    background: var(--gradient-black);
+  }
+
+  body {
+    cursor: none;
+    background-color: var(--black-900);
+  }
+
+  .cursor-outline {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #0000007a;
+  }
+
+  .cursor-outline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 150;
+    pointer-events: none;
+  }
+
+  body, 
+  html {
+    cursor: url("../assets/cursor\ white.svg"), auto;
+  }
+
+
+  ul {
+    list-style: none;
+  }
+
+  ::selection {
+  color: #000000;
+  background: #d8d8d8;
+}
+
+  .wrapper {
+    width: min(50rem, 100%);
+    margin-inline: auto;
+  
+    padding-inline: 2.4rem;
+  }
+
+  @media (min-width: 1080px) {
+    .wrapper {
+      width: min(102rem, 100%);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .wrapper {
+      width: min(120rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .wrapper {
+      width: min(140rem, 100%);
+    }
+
+    :root {
+      font-size: 65%;
+    }
+  }
+
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+  }
+
+  /*====  scrollbar ============================ */
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+  width: .6rem;
+  background: linear-gradient(to bottom, #d8d8d8, #00000000);
+  border-radius: 1rem;
+}
+
+  /* buttonWhatsapp =================== */
+#buttonWhatsapp {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100;
+  
+    opacity: 0;
+    visibility: hidden;
+  
+    transform: translateY(100%);
+    transition: all 300ms ease-in-out;
+  }
+  
+  #buttonWhatsapp.show {
+    opacity: 1;
+    visibility: visible;
+  
+    transform: translateY(0);
+  }
+  
+  #buttonWhatsapp img {
+    width: 6rem;
+    transition: all 300ms ease-in-out;
+  }
+  
+  #buttonWhatsapp svg:hover {
+    transform: scale(1.1);
+  }

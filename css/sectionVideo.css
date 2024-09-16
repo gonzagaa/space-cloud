@@ -1,0 +1,128 @@
+#video {
+    position: relative;
+    overflow: hidden;
+    background: var(--black-color);
+}
+
+#video header {
+    margin-bottom: 4rem;
+}
+
+#video header span.span {
+    font-size: 1.4rem;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 800;
+
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#video header h2 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: #ffffffd9;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+#video iframe {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+    border-radius: 1.2rem;
+}
+
+#video .div-video {
+    position: relative;
+    z-index: 10;
+}
+
+#video .div-video::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 102%;
+    height: 102.2%;
+    border-radius: 1.3rem;
+
+    background: var(--gradient);
+    animation: gradient 1s ease infinite;
+    background-size: 150% 150%;
+}
+
+#video img.lines {
+    display: none;
+}
+
+#video a button {
+    margin-top: 4rem;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    background: var(--gradient);
+    border: none;
+
+    position: relative;
+    z-index: 11;
+}
+
+#video a button:hover {
+    filter: brightness(1.15);
+    box-shadow:  12px 12px 25px #140e1e,
+             -12px -12px 25px #1a1228;
+}
+
+@media (min-width: 1080px) {
+    section#video header {
+        margin-bottom: 7rem;
+    }
+
+    section#video .wrapper .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#video .div-video {
+        width: 90%;
+
+        box-shadow:  20px 20px 60px #130c22,
+             -20px -20px 60px #110a1c;
+    }
+    
+    section#video header span.span {
+        font-size: 1.6rem;
+    }
+    
+    section#video header h2 {
+        margin-top: 1rem;
+        font-size: 6rem;
+    }
+
+    section#video .div-video::before {
+        border-radius: 1.2rem;
+        width: 100.5%;
+        height: 101%;
+    }
+
+    section#video a button {
+        font-size: 2rem;
+    }
+
+    section#video img.lines {
+        display: inherit;
+        position: absolute;
+        width: 100%;
+        top: 65%;
+        opacity: .5;
+        left: 50%;
+        transform: translate(-50%, -65%);
+    }
+}
+

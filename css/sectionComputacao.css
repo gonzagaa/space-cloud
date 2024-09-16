@@ -1,0 +1,143 @@
+#computacao {
+    position: relative;
+    overflow: hidden;
+    background: var(--black-color);
+    z-index: 11;
+}
+
+#computacao .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#computacao .text h2 {
+    font-size: 3rem;
+    color: #ffffffd9;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+#computacao .text h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+#computacao .text p {
+    color: #cec9db;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+#computacao .text .numbers {
+    margin-top: 3rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+#computacao .text .numbers .number {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#computacao .text .number h3 {
+    font-family: "Bai Jamjuree", sans-serif;
+    color: #fff;
+    font-size: 6rem;
+}
+
+#computacao .text .number h3 span {
+    font-size: 4rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#computacao .text .number h4 {
+    color: #ffffffd6;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+#computacao a button {
+    margin-top: 4rem;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    background: var(--gradient);
+    border: none;
+}
+
+#computacao a button:hover {
+    filter: brightness(1.15);
+    box-shadow:  12px 12px 25px #140e1e,
+             -12px -12px 25px #1a1228;
+}
+
+#computacao .image img {
+    width: 100%;
+    margin-top: 8rem;
+}
+
+@media (min-width: 1080px) {
+    section#computacao .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8rem;
+        align-items: center;
+    }
+
+    section#computacao .text {
+        align-items: start;
+        text-align: left;
+    }
+
+    section#computacao .text h2 {
+        font-size: 6rem;
+    }
+
+    section#computacao .text p {
+        margin-top: 0;
+        font-size: 2rem;
+        width: 80%;
+    }
+
+    section#computacao .text .numbers {
+        margin-top: 4rem;
+    }
+
+    section#computacao .text .number h3 {
+        font-size: 10rem;
+        line-height: .95;
+    }
+
+    section#computacao .text .number h3 span {
+        font-size: 6rem;
+    }
+
+    section#computacao .text a button {
+        font-size: 2rem;
+    }
+
+    section#computacao .image img {
+        margin-top: 0;
+        width: 100%;
+
+        animation: image infinite ease-in-out 5s;
+    }
+}
+
+@keyframes image {
+    50% {
+        transform: translateY(-10px);
+        filter: drop-shadow(0 0 30px #ffffff4b);
+    }
+}

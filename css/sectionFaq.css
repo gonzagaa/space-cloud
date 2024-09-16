@@ -1,0 +1,147 @@
+#faq {
+    position: relative;
+    overflow: hidden;
+    background: var(--black-color);
+}
+
+#faq header {
+    margin-bottom: 4rem;
+}
+
+#faq header span.span {
+    font-size: 1.4rem;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 800;
+
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#faq header h2 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: #ffffffd9;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+#faq .faq {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    position: relative;
+    z-index: 10;
+}
+
+#faq details {
+    width: 100%;
+    user-select: none;
+}
+
+#faq summary {
+    color: #d0cfcffe;
+    font-weight: 500;
+    font-size: 1.4rem;
+
+    background: linear-gradient(140deg, #4572fa33, #00000046, #0000001d,#a482fa2d);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    box-shadow:  18px 18px 33px #0f091df5,
+             -18px -18px 33px #0c0a1de7;
+
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+
+    border-radius: 2rem;
+
+    border: 2px solid #5757575a;
+
+    transition: all 200ms ease-in-out;
+
+    font-family: "Bai Jamjuree", sans-serif;
+
+}
+
+#faq summary:hover {
+    cursor: pointer;
+    border: 2px solid #ababab93;
+}
+
+#faq details[open] summary {
+    border-radius: 2rem 2rem 0 0;
+    background: linear-gradient(140deg, #00000046, #00000046, #0000001d,#00000046);
+
+    border: 2px solid #ababab93;
+    border-bottom: 0;
+}
+
+#faq summary ion-icon {
+    font-size: 3rem;
+    transition: all .5s ease-in-out;
+    color: var(--primary-color);
+    transform: rotate(-45deg);
+    position: relative;
+    line-height: 0;
+}
+
+
+#faq details[open] summary ion-icon {
+    transform: rotate(0);
+}
+
+details>summary {
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none
+}
+
+#faq details p {
+    background: linear-gradient(140deg, #4572fa33, #00000046, #0000001d,#a482fa2d);
+
+    font-size: 1.8rem;
+    color: #cec9db;
+    padding: 3rem;
+    padding-top: 2rem;
+    padding-right: 10%;
+    text-align: left;
+    font-weight: 200;
+    border: 2px solid #ababab93;
+
+    border-top: 0;
+
+    border-radius: 0 0 2rem 2rem;
+}
+
+@media (min-width: 1080px) {
+    section#faq header {
+        margin-bottom: 7rem;
+    }
+    
+    section#faq header span.span {
+        font-size: 1.6rem;
+    }
+    
+    section#faq header h2 {
+        margin-top: 1rem;
+        font-size: 6rem;
+    }
+
+    section#faq summary {
+        font-size: 2rem;
+    }
+
+    section#faq details p {
+        font-size: 2rem;
+    }
+
+    section#faq .faq {
+        padding-inline: 8rem;
+    }
+}

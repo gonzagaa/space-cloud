@@ -1,0 +1,165 @@
+footer {
+    background: var(--bg-black);
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    padding-block: 8rem;
+}
+
+footer img.bg {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+footer::before {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 1px;
+    background: linear-gradient(to right, #91ff0000 0%, #4572FA 50%, #91ff0000 100%); 
+}
+
+footer .logo {
+    width: 15rem;
+    margin-bottom: 2rem;
+}
+
+footer .content {
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: start;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+footer .content h3 {
+    font-size: 2rem;
+    background: var(--gradient);
+    font-family: "Bai Jamjuree", sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+footer .content p {
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: #d2d2d2;
+}
+
+footer .content p a {
+    color: #d2d2d2;
+    text-decoration: none;
+}
+
+a[href^="tel"] {
+    color: inherit; 
+    text-decoration: none;
+}
+
+footer div.redes-sociais .icons {
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer div.redes-sociais a {
+    text-decoration: none;
+}
+
+footer .redes-sociais ion-icon {
+    color: #d2d2d2;
+    font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+        width: min(76rem, 100%);
+    } 
+}     
+
+@media (min-width: 1080px) {
+    .wrapper {
+      width: min(112rem, 100%);
+    }
+
+    footer#footer .logo {
+        margin-bottom: 0;
+    }
+
+    footer#footer .wrapper .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-content: center;
+        justify-items: center;
+        gap: 15rem;
+    }
+
+    footer#footer .wrapper div {
+        gap: 1rem;
+    }
+
+    footer#footer .wrapper div.redes-sociais {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        text-align: end;
+    }
+
+    footer#footer a {
+        transition: all 200ms ease-in-out;
+    }
+
+    footer#footer a:hover {
+        color: #fff;
+        cursor: url("../assets/CURSOR\ LSB.svg"), auto;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+
+    footer#footer .redes-sociais ion-icon {
+        font-size: 3rem;
+        transition: all 200ms ease-in-out;
+
+        padding: 1rem;
+    }
+
+    footer#footer div.redes-sociais .icons {
+        gap: 0;
+    }
+
+    footer#footer .redes-sociais ion-icon:hover {
+        background-color: #0059ff29;
+        border-radius: 50%;
+        line-height: 0;
+    }
+}  
+
+@media (min-width: 1400px) {
+    .wrapper {
+      width: min(140rem, 100%);
+    }
+  }
+  
+  @media (min-width: 1700px) {
+    .wrapper {
+      width: min(150rem, 100%);
+    }
+  }

@@ -1,0 +1,188 @@
+#depoimentos {
+    position: relative;
+    overflow: hidden;
+    background: var(--black-color);
+}
+
+#depoimentos header {
+    margin-bottom: 4rem;
+}
+
+#depoimentos header span.span {
+    font-size: 1.4rem;
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 800;
+
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#depoimentos header h2 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: #ffffffd9;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+#depoimentos header p {
+    color: #cec9db;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+#depoimentos .cards .card {
+    padding: 2rem;
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+
+    background: linear-gradient(140deg, #4572fa0d, #0000001e, #0000001d,#a482fa1d);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    box-shadow:  9px 9px 17px #050215,
+             -9px -9px 17px #07021d;
+}
+
+#depoimentos .cards .card p {
+    font-style: italic;
+    font-weight: 400;
+    color: #cec9db;
+    font-size: 1.6rem;
+    line-height: 1.6;
+
+    margin-bottom: 2rem;
+}
+
+#depoimentos .cards .card .stars {
+    display: flex;
+    gap: 1rem;
+}
+
+#depoimentos .cards .card .stars img {
+    width: 2rem;
+}
+
+#depoimentos .cards .card h3 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: #fff;
+    font-family: "Bai Jamjuree", sans-serif;
+}
+
+#depoimentos .swiper-button-next,
+#depoimentos .swiper-button-prev {
+    display: none;
+}
+
+#depoimentos .cards {
+    padding-bottom: 5rem;
+}
+
+#depoimentos .swiper-pagination-bullet {
+    background-color: #ffffff14; 
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+  }
+  
+#depoimentos .swiper-pagination-bullet-active {
+    background: var(--gradient); 
+}
+
+@media (min-width: 1080px) {
+    section#depoimentos header {
+        margin-bottom: 7rem;
+    }
+    
+    section#depoimentos header span.span {
+        font-size: 1.6rem;
+    }
+    
+    section#depoimentos header h2 {
+        margin-top: 1rem;
+        font-size: 6rem;
+    }
+
+    section#depoimentos .cards {
+        height: 100%;
+
+    }
+
+    section#depoimentos .swiper {
+        position: relative;
+    }
+
+    section#depoimentos .swiper::before,
+    section#depoimentos .swiper::after {
+        content: '';
+        position: absolute;
+        width: 20rem;
+        height: 100%;
+        top: 0;
+        z-index: 2;
+    }
+
+    section#depoimentos .swiper::before {
+        left: 0;
+        background: linear-gradient(to right, #060219, transparent);
+    }
+
+    section#depoimentos .swiper::after {
+        right: 0;
+        background: linear-gradient(to left, #060219, transparent);
+    }
+
+    section#depoimentos .cards .card {
+        padding: 3rem;
+        height: 100%;
+    }
+
+    section#depoimentos .swiper-button-next,
+    section#depoimentos .swiper-button-prev {
+        /* display: inherit; */
+        color: #fff;
+    }
+
+    section#depoimentos .cards .swiper-slide {
+        transform: scale(.8);
+        transition: all 400ms ease-in-out;
+        opacity: .9;
+    }
+
+    section#depoimentos .cards .swiper-slide-next {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    section#depoimentos .cards .swiper-slide-next .stars img {
+        animation: star infinite ease-in-out 1.8s;
+    }
+
+    section#depoimentos .cards .swiper-slide-next .stars img:nth-child(2) {
+        animation-delay: 300ms;
+    }
+
+    section#depoimentos .cards .swiper-slide-next .stars img:nth-child(3) {
+        animation-delay: 600ms;
+    }
+
+    section#depoimentos .cards .swiper-slide-next .stars img:nth-child(4) {
+        animation-delay: 900ms;
+    }
+
+    section#depoimentos .cards .swiper-slide-next .stars img:nth-child(5) {
+        animation-delay: 1200ms;
+    }
+
+    @keyframes star {
+        50% {
+            transform: translateY(-3px);
+            filter: drop-shadow(0 0 10px #ffffff63);
+        }
+    }
+}
