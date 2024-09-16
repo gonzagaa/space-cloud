@@ -125,9 +125,15 @@ footer .redes-sociais ion-icon {
 
     footer#footer a {
         transition: all 200ms ease-in-out;
+        text-decoration: none;
     }
 
-    footer#footer a:hover {
+    footer#footer .contato a:hover {
+        cursor: pointer;
+        filter: brightness(1.1);
+    }
+
+    footer#footer .redes-sociais a:hover {
         color: #fff;
         cursor: url("../assets/CURSOR\ LSB.svg"), auto;
         transform: scale(1.1);
