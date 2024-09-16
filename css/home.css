@@ -37,14 +37,20 @@
   #home .content {
     position: relative;
     z-index: 1;
+
   }
 
   #home .text {
     position: relative;
     z-index: 11;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   #home span {
+    width: max-content;
     font-size: 1.5rem;
     font-family: "Bai Jamjuree", sans-serif;
     font-weight: 800;
@@ -65,7 +71,7 @@
     background: linear-gradient(140deg, #CFCFCF 60%, #A482FA 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: "Bai Jamjuree", sans-serif;
     text-transform: uppercase;
 
@@ -96,7 +102,7 @@
   }
 
   #home .card {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 1rem;
   }
@@ -153,6 +159,7 @@
       }
 
       header#home .card {
+        display: flex;
         position: absolute;
         padding: 1rem 2rem;
         z-index: 11;
