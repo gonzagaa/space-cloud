@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 
-    font-family: var(--InterV);
+    font-family: "Montserrat", sans-serif;
 }
 
 :root {
@@ -52,7 +52,7 @@ html {
     height: 100%;
     font-family: var(--InterV);
     text-align: center;
-    background: var(--gradient-black);
+    background: #060219;
   }
 
   body {
