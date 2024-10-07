@@ -1,0 +1,207 @@
+#notificacoes {
+    min-height: 100vh;
+    padding-block: 10rem;
+}
+
+#notificacoes .content {
+    position: relative;
+    z-index: 11;
+
+    padding-bottom: 10rem;
+}
+
+#notificacoes header {
+    margin-bottom: 5rem;
+}
+
+#notificacoes header h2 {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+
+    margin-bottom: .5rem;
+}
+
+#notificacoes header h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+#notificacoes header p {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #cec9db;
+
+    margin-bottom: 2rem;
+}
+
+#notificacoes .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#notificacoes details {
+    width: 100%;
+    user-select: none;
+}
+
+#notificacoes summary {
+    color: #d0cfcffe;
+    font-weight: 500;
+    font-size: 1.4rem;
+
+    background: linear-gradient(140deg, #4572fa26, #0000001f, #a482fa1c);
+    border: 1px solid #ffffff0c;
+    backdrop-filter: blur(6px) saturate(120%);
+    -webkit-backdrop-filter: blur(6px) saturate(120%);
+    box-shadow:  9px 9px 17px #05021544,
+             -9px -9px 17px #07021d4c;
+
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+
+    border-radius: 2rem;
+
+    border: 2px solid #5757575a;
+
+    transition: all 200ms ease-in-out;
+
+    font-family: "Bai Jamjuree", sans-serif;
+
+}
+
+#notificacoes summary:hover {
+    cursor: pointer;
+    border: 2px solid #ababab93;
+}
+
+#notificacoes details[open] summary {
+    border-radius: 2rem 2rem 0 0;
+    background: linear-gradient(140deg, #00000046, #00000046, #0000001d,#00000046);
+
+    border: 2px solid #ababab93;
+    border-bottom: 0;
+}
+
+#notificacoes summary ion-icon {
+    font-size: 3rem;
+    transition: all .5s ease-in-out;
+    color: var(--primary-color);
+    transform: rotate(-45deg);
+    position: relative;
+    line-height: 0;
+}
+
+
+#notificacoes details[open] summary ion-icon {
+    transform: rotate(0);
+}
+
+details>summary {
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none
+}
+
+#notificacoes details p {
+    background: linear-gradient(140deg, #4572fa33, #00000046, #0000001d,#a482fa2d);
+
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #dfdbe8;
+    padding: 3rem;
+    padding-top: 2rem;
+    padding-right: 10%;
+    text-align: left;
+    font-weight: 200;
+    border: 2px solid #ababab93;
+
+    border-top: 0;
+
+    border-radius: 0 0 2rem 2rem;
+}
+
+#notificacoes details summary .ball.lida {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #2ffd1c;
+}
+
+#notificacoes details summary .ball.naolida {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: #fd1c1c;
+}
+
+
+@media (min-width: 1080px) {
+    section#notificacoes {
+        height: 100vh;
+        max-height: 100vh;
+        padding-top: 17rem;
+    }
+
+    section#notificacoes header {
+        margin-bottom: 6rem;
+    }
+    
+    section#notificacoes header h2 {
+        font-family: "Bai Jamjuree", sans-serif;
+        font-size: 5rem;
+        color: #fff;
+        line-height: .9;
+        margin-bottom: 1rem;
+    }
+    
+    section#notificacoes header p {
+        font-size: 1.6rem;
+        line-height: 1.3;
+        font-weight: 400;
+        color: #cec9db;
+
+        margin-bottom: 3rem;
+    }
+
+    section#notificacoes summary {
+        font-size: 1.8rem;
+    }
+}
+
+
+@media (min-width: 1080px) {
+    section#notificacoes .wrapper {
+      width: min(100rem, 100%);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    section#notificacoes .wrapper {
+      width: min(110rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    section#notificacoes .wrapper {
+      width: min(120rem, 100%);
+    }
+  }
+
+  @media (min-width: 1700px) {
+    section#notificacoes .wrapper {
+      width: min(130rem, 100%);
+    }
+}

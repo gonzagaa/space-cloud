@@ -1,0 +1,229 @@
+{
+    "00001": {
+        "id": "00001",
+        "title": "Instância preemptiva e spot",
+        "resume": "Instância Preemptivas de VM e os Spots, são uma…",
+        "content": "Instância Preemptivas de VM e os Spots, são uma variante mais em conta das VMs padrão, isso por porque essas instâncias podem ser interrompidas de tempos em tempos, para recuperar a capacidade de computação e direcioná-las para outras Vms.",
+        "tags": [
+            "vm spot"
+        ]
+    },
+    "00002": {
+        "id": "00002",
+        "title": "VM e máquina virtual",
+        "resume": "Um computador em nuvem é uma VM…",
+        "content": "Um computador em nuvem é uma VM (Máquina Virtual), acessada remotamente pelo seu dispositivo, sem limitações de região, oferecendo acessibilidade e conforto, com todos os serviços e funcionalidades de um computador normal, mas sem a necessidade de ter em mãos o produto físico.",
+        "tags": [
+            "máquina virtual"
+        ]
+    },"00003": {
+        "id": "00003",
+        "title": "Salvamento de arquivos",
+        "resume": "Nossos serviços incluem o salvamento total dos seus…",
+        "content": "Nossos serviços incluem o salvamento total dos seus arquivos de forma 100% segura, basta alocar esses arquivos e documentos em um dos hds da máquina, assim seus arquivos de jogos, documentos de trabalhos e projetos não são perdidos ao desligar ou reiniciar sua máquina.",
+        "tags": [
+            "armazenamento"
+        ]
+    },"00004": {
+        "id": "00004",
+        "title": "Perda de arquivos",
+        "resume": "Seus arquivos, documentos e jogos salvos…",
+        "content": "Seus arquivos, documentos e jogos salvos automaticamente ou manualmente, não são perdidos desde que estejam alocados em um dos hds da máquina, assim mesmo em caso de desligamento por spot e reinicializações do sistema, seus arquivos permaneceram intactos.",
+        "tags": [
+            "armazenamento"
+        ]
+    },"00005": {
+        "id": "00005",
+        "title": "Desligamento forçado",
+        "resume": "Se sua máquina for desligada por um spot ou alguma…",
+        "content": "Se sua máquina for desligada por um spot ou alguma instância preemptiva, você pode sim ligar a máquina novamente, retomando quaisquer atividades sem preocupações sobre a integridade da máquina, se tiver problemas ao fazer isso entre em contato com o suporte.",
+        "tags": [
+            "vm spot"
+        ]
+    },"00006": {
+        "id": "00006",
+        "title": "RDP e VNC",
+        "resume": "O RDP (Remote Desktop Protocol) e VNC…",
+        "content": "O RDP (Remote Desktop Protocol) e VNC (Virtual Network Computing) são usados apenas para o primeiro acesso, permitindo vincular suas contas Parsec, Moonlight e Steam Link. Após vincular suas contas, você deve fechar o RDP ou VNC e jogar exclusivamente pelo Parsec, Moonlight ou Steam Link.",
+        "tags": [
+            "máquina virtual"
+        ]
+    },"00007": {
+        "id": "00007",
+        "title": "Armazenamento",
+        "resume": "Na contratação do plano nossas máquinas oferecem…",
+        "content": "Na contratação do plano nossas máquinas oferecem um armazenamento inicial de 256gb, também oferecemos como produto adicional a possibilidade de contratar mais 256gb de armazenamento, sendo assim o armazenamento máximo das nossas máquinas é de 512gb.",
+        "tags": [
+            "armazenamento"
+        ]
+    },"00008": {
+        "id": "00008",
+        "title": "Upgrade dos serviços",
+        "resume": "Deseja um desempenho maior? Saiba que você…",
+        "content": "Deseja um desempenho maior? Saiba que você pode fazer o upgrade da sua máquina com a nossa equipe, basta solicitar pela troca de planos pagando uma pequena taxa referente aos valores do plano atual e o desejado, feito isso o novo plano entra em funcionamento em alguns minutos.",
+        "tags": [
+            "compra e recebimento"
+        ]
+    },"00009": {
+        "id": "00009",
+        "title": "Atualizações de drivers",
+        "resume": "Atualizações devem ser solicitadas a nossa equipe…",
+        "content": "Atualizações devem ser solicitadas a nossa equipe, já que os componentes do sistema, incluindo os drivers, foram pensados para o melhor desempenho da sua máquina, alterar essas configurações pode diminuir a performance e até quebrar a máquina, além disso, é considerado uso indevido dos nossos serviços.",
+        "tags": [
+            "máquina virtual"
+        ]
+    },
+    "00010": {
+        "id": "00010",
+        "title": "Sobre anticheats",
+        "resume": "Os Anti-Cheats são programas dedicados a barrar…",
+        "content": "Os Anti-Cheats são programas dedicados a barrar atividades suspeitas em alguns jogos e programas, esse sistema pode barrar completamente o funcionamento de alguns jogos e programas em VMs, por isso você deve se manter atento a lista de compatibilidade dos nossos serviços.",
+        "tags": [
+            "compatibilidade"
+        ]
+    },
+    "00011": {
+        "id": "00011",
+        "title": "Capacidade das máquinas",
+        "resume": "Nossos planos contem diversas máquinas…",
+        "content": "Nossos planos contem diversas máquinas, podendo oferecer um desempenho menor ou maior conforme a necessidade do usuário, sabendo disso, os detalhes sobre a capacidade de cada máquina podem ser encontrados em <ins>especificações das máquinas</ins> na aba de suporte.",
+        "tags": [
+            "máquina virtual"
+        ]
+    },
+    "00012": {
+        "id": "00012",
+        "title": "Status da máquina",
+        "resume": "Você pode verificar o status de funcionamento…",
+        "content": "Você pode verificar o status de funcionamento e alguns detalhes sobre a máquina, acessando a aba <ins>painel</ins> na área do usuário, que também permite gerenciar algumas ações da máquina como inicialização, reinicialização e desligamento.",
+        "tags": [
+            "máquina virtual"
+        ]
+    },
+    "00013": {
+        "id": "00013",
+        "title": "Forma de pagamento",
+        "resume": "As formas de pagamento incluem boleto e pix…",
+        "content": "As formas de pagamento incluem boleto e pix, essas opções são selecionáveis e visíveis durante o processo da compra no <ins>carrinho</ins> da plataforma, para acessar o carrinho você pode selecionar o <ins>menu do usuário</ins> no canto superior direito do site.",
+        "tags": [
+            "compra e recebimento"
+        ]
+    },
+    "00014": {
+        "id": "00014",
+        "title": "Space cloud",
+        "resume": "Nosso sistema permite que você conecte seu…",
+        "content": "Nosso sistema permite que você conecte seu dispositivo diretamente a um computador em nosso servidor, esse computador é projetado para oferecer o melhor desempenho as suas atividades, como jogos, trabalhos e muito mais.",
+        "tags": [
+            "space cloud"
+        ]
+    },
+    "00015": {
+        "id": "00015",
+        "title": "Dispositivos compatíveis",
+        "resume": "No Android o primeiro acesso é feito pelo RDP ou…",
+        "content": "No Android o primeiro acesso é feito pelo RDP ou VNC e o uso com Moonlight ou Persec. Já no IOS o primeiro acesso também ocorre pelo Remote Desktop ou VNC, mas não é possível usar Moonlight e Parsec, o único aplicativo de streaming compatível para IOS é o Steam Link.",
+        "tags": [
+            "compatibilidade"
+        ]
+    },
+    "00016": {
+        "id": "00016",
+        "title": "Benefícios da nuvem",
+        "resume": "Os gastos para ter um computador como os da…",
+        "content": "Os gastos para ter um computador como os da Space Cloud, físico em mãos, chegaria perto dos R$12.000, sem contar os gastos de manutenção que vão chegar com tempo de uso, sabendo disso, um computador em nuvem é recomendado, por conta de seu baixo valor em comparação ao dispositivo físico.",
+        "tags": [
+            "space cloud"
+        ]
+    },
+    "00017": {
+        "id": "00017",
+        "title": "Filas de login",
+        "resume": "Sabemos que esperar para acessar algo que…",
+        "content": "Sabemos que esperar para acessar algo que comprou é desanimador, então para tornar a sua experiência mais confortável trabalhamos sem filas de espera, assim é possível acessar sua máquina quando e onde quiser, sem tomar muito de seu tempo apenas para conectar a sua conta.",
+        "tags": [
+            "space cloud"
+        ]
+    },
+    "00018": {
+        "id": "00018",
+        "title": "Compra e recebimento",
+        "resume": "Você pode verificar o status da sua compra em…",
+        "content": "Você pode verificar o status da sua compra em <ins>faturas</ins> selecionando o menu do usuário no canto superior direito do site para acessá-las, com a compra aprovada o disco da vm deve estar visível em alguns instantes na aba <ins>painel</ins>, com algumas informações. Um e-mail com mais detalhes também é enviado.",
+        "tags": [
+            "compra e recebimento"
+        ]
+    },
+    "00019": {
+        "id": "00019",
+        "title": "Horários de reinicialização",
+        "resume": "As máquinas passam por um desligamento agendado…",
+        "content": "As máquinas passam por um desligamento agendado do sistema, para que os recursos sejam realocados e mantenham um bom desempenho, os desligamentos ocorrem nos seguintes horários: 00:00h | 06:00h | 18:00h. Não podemos evitar esse processo, então ele é feito em apenas alguns instantes.",
+        "tags": [
+            "vm spot"
+        ]
+    },
+    "00020": {
+        "id": "00020",
+        "title": "equipe suporte",
+        "resume": "Nosso pessoal está pronto para ouvir e resolver os…",
+        "content": "Nosso pessoal está pronto para ouvir e resolver os seus problemas nos seguintes horários: 08:00h as 18:00h. Lembrando que a aba <ins>suporte</ins> foi planejada com base em perguntas recorrentes feitas por nossos clientes, então antes de um atendimento direto tente consultar a aba <ins>suporte</ins>.",
+        "tags": [
+            "space cloud"
+        ]
+    },
+    "00021": {
+        "id": "00021",
+        "title": "Emuladores na vm",
+        "resume": "O uso de emuladores não é recomendado, mas…",
+        "content": "O uso de emuladores não é recomendado, mas nossas VMs Google virtualizadas são capazes de executar esse tipo de programa sem problemas, vale lembrar que por agora nossas VMs Azure não podem ser virtualizadas, isso impede que emuladores funcionem da melhor forma na máquina.",
+        "tags": [
+            "compatibilidade"
+        ]
+    },
+    "00022": {
+        "id": "00022",
+        "title": "Game streaming",
+        "resume": "Os serviços de Streaming de jogos são responsáveis…",
+        "content": "Os serviços de Streaming de jogos são responsáveis por conectar os dispositivos do cliente as nossas VMs para jogar, os serviços que podemos utilizar para isso são o Parsec, Moonlight e Steamlink, passando por pequenas configurações no dispositivo do usuário ou nas nossas máquinas.",
+        "tags": [
+            "máquina virtual"
+        ]
+    },
+    "00023": {
+        "id": "00023",
+        "title": "Programas de edição",
+        "resume": "Nossas máquinas dão suporte a todos os…",
+        "content": "Nossas máquinas dão suporte a todos os programas da Adobe e a diversos outros softwares de edição conhecidos, assim projetos envolvendo edição de texto, imagem e vídeo podem ser executados tranquilamente, possibilitando até mesmo salvar os arquivos no HD da máquina.",
+        "tags": [
+            "compatibilidade"
+        ]
+    },
+    "00024": {
+        "id": "00024",
+        "title": "Especificações das máquinas",
+        "resume": "Confira abaixo alguns detalhes e configurações de…",
+        "content": "<b>Confira abaixo alguns detalhes e configurações de nossas máquinas:</b><br><br><b>Google:</b><br><ul><li>VM Básica | 6 Núcleo Virtual | 18 RAM | HD Padrão 256GB | Tesla T4 16GB</li><li>VM Média | 8 Núcleo Virtual | 22 RAM | HD Padrão 256GB | Tesla T4 16GB</li><li>VM Profissional | 16 Núcleo Virtual | 30 RAM | HD Padrão 256GB | Tesla T4 16GB</li></ul><b>Azure:</b><br><ul><li>VM Básica | 4 Núcleo Virtual | 22 RAM | HD Padrão 256GB | Tesla T4 16GB</li><li>VM Média | 8 Núcleo Virtual | 56 RAM | HD Padrão 256GB | Tesla T4 16GB</li></ul>",
+        "tags": [
+            "máquina virtual"
+        ]
+    },
+    "00025": {
+        "id": "00025",
+        "title": "Programas Incompatíveis",
+        "resume": "Alguns jogos e programas podem não ser bem…",
+        "content": "<b>Alguns jogos e programas podem não ser bem executados em nossas máquinas, para mantê-los informados sobre, disponibilizamos a seguinte lista de incompatíveis:</b><br><br><b>Incompatível para VMs Azure:</b><ul><li>elden ring</li><li>star citzen</li><li>fortnite</li><li>wayfinder</li><li>torchlight 3</li><li>gta five m</li><li>mta</li><li>valorant</li><li>genshin impact.</li></ul><b>Incompatível para VMs Google:</b><ul><li>torchlight 3</li><li>gta five m</li><li>mta</li><li>valorant</li><li>genshin impact</li><li>rainbow six siege</li></ul>",
+        "tags": [
+            "compatibilidade"
+        ]
+    },
+    "00026": {
+        "id": "00026",
+        "title": "Recomendações das máquinas",
+        "resume": "Confira abaixo algumas recomendações de uso…",
+        "content": "<p><b>Confira abaixo algumas recomendações de uso para nossas máquinas</b><br /><br /><b>Google</b></p><ul><li>VM Básica | Recomendado para uso moderado, esse pacote oferece conforto para jogos e projetos com peso de processamento <b>baixo-médio.</b></li><li>VM Média | Recomendado para uso casual, esse pacote oferece conforto para jogos e projetos com peso de processamento <b>médio-alto.</b></li><li>VM Avançada | Recomendado para uso profissional, esse pacote oferece conforto para jogos e projetos com peso de processamento <b>alto-ultra.</b></li></ul><p><b>Azure</b></p><ul><li>VM Básica | Com um poder bruto de processamento oferece uma estabilidade melhor em jogos e projetos com peso de processamento <b>médio-alto.</b></li><li>VM Média | Com um poder bruto de processamento oferece uma estabilidade melhor em jogos e projetos com peso de processamento <b>alto-ultra.</b></li></ul>",
+        "tags": [
+            "máquina virtual"
+        ]
+    }
+}

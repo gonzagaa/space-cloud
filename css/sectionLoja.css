@@ -134,6 +134,10 @@
     color: #fff;
 }
 
+#loja .cards .card .topics p img {
+    width: 2.8rem;
+}
+
 #loja .cards .card.recomendado .topics p ion-icon {
     background: var(--gradient);
 }
@@ -167,6 +171,27 @@
     transform: translate(0, -50%);
     width: 100%;
     opacity: .2;
+}
+
+#loja a button {
+    margin-top: 4rem;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    background: var(--gradient);
+    border: none;
+
+    position: relative;
+    z-index: 11;
+}
+
+#loja a button:hover {
+    filter: brightness(1.15);
+    box-shadow:  12px 12px 25px #140e1e,
+             -12px -12px 25px #1a1228;
 }
 
 @media (min-width: 1080px) {
@@ -220,6 +245,11 @@
 
     section#loja .cards .card .topics p {
         font-size: 1.8rem;
+    }
+
+    section#loja a button {
+        margin-top: 7rem;
+        font-size: 2rem;
     }
 
 } 

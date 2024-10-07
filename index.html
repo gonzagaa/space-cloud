@@ -34,9 +34,13 @@
           <span class="close">&times;</span>
           
           <div class="cadastro">
-            <h2>Olá, Tudo Bem?</h2>
-            <p>Você é novo por aqui e não tem uma conta? faça seu cadastro para você poder começar a se divertir!</p>
-            <a href="#"><button>Cadastrar</button></a>
+            <div class="text">
+              <h2>Olá, Tudo Bem?</h2>
+              <p>Você é novo por aqui e não tem uma conta? faça seu cadastro para você poder começar a se divertir!</p>
+              <a href="#"><button>Cadastrar</button></a>
+            </div>
+
+            <img class="bg-cadastro" src="./assets/astronauta spacecloud.jpg" alt="">
           </div>
 
           <div class="login">
@@ -49,6 +53,11 @@
 
               <label for="senha"></label>
               <input type="password" id="senha" placeholder="Digite sua senha">
+
+              <div class="buttons">
+                <a href="#">Esqueceu sua senha?</a>
+                <a href="#"><button>Entrar</button></a>
+              </div>
             </form>
           </div>
       </div>
@@ -68,9 +77,9 @@
 
               <ul>
                   <li><a onclick="closeMenu()" href="#home">Home</a></li>
-                  <li><a onclick="closeMenu()" href="#modulos">Loja</a></li>
-                  <li><a onclick="closeMenu()" href="#plano">FAQ</a></li>
-                  <li><a onclick="closeMenu()" href="#faq">Social</a></li>
+                  <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+                  <li><a onclick="closeMenu()" href="#loja">Loja</a></li>
+                  <li><a onclick="closeMenu()" href="#faq">FAQ</a></li>
               </ul>
 
               <div class="buttons">
@@ -80,7 +89,7 @@
                   </button>
                 </a>
 
-                <a onclick="closeMenu()" class="button" href="">
+                <a onclick="closeMenu()" class="button" href="./registro/index.html">
                   <button>
                     Registrar
                   </button>
@@ -117,7 +126,7 @@
         <div class="wrapper">
            <div class="content">
               <div class="text">
-                <span data-aos="fade-down"
+                <span class="span" data-aos="fade-down"
                 data-aos-duration="1500">SPACE CLOUD</span>
                 <h1 data-aos="fade-up"
                 data-aos-anchor-placement="top-center">Alto desempenho em jogos e trabalhos</h1>
@@ -242,10 +251,6 @@
               <div class="number">
                 <h3>135K<span>+</span></h3>
                 <h4>Usuários Ativos</h4>
-              </div>
-              <div class="number">
-                <h3>540<span>+</span></h3>
-                <h4>Avaliações</h4>
               </div>
             </div>
             <a href="#"><button>ASSINAR AGORA</button></a>
@@ -410,11 +415,11 @@
                 <h3>R$79,00<span>/Mês</span></h3>
                 
                 <div class="topics">
-                  <p><ion-icon name="checkmark-outline"></ion-icon> Sem fila</p>
-                  <p><ion-icon name="checkmark-outline"></ion-icon> Salva Arquivos</p>
-                  <p><ion-icon name="checkmark-outline"></ion-icon> 6 Núcleos</p>
-                  <p><ion-icon name="checkmark-outline"></ion-icon> 16GB RAM</p>
-                  <p><ion-icon name="checkmark-outline"></ion-icon> Contém spot</p>
+                  <p><img src="./assets/sem fila.png" alt=""> Sem fila</p>
+                  <p><img src="./assets/arquivo.png" alt=""> Salva Arquivos</p>
+                  <p><img src="./assets/nucleo.png" alt=""> 6 Núcleos</p>
+                  <p><img src="./assets/ram.png" alt=""> 16GB RAM</p>
+                  <p><img src="./assets/spot.png" alt=""> Contém spot</p>
                 </div>
   
                 <a href="#"><button>ASSINAR AGORA</button></a>
@@ -427,11 +432,11 @@
                 <h3>R$97,90<span>/Mês</span></h3>
                 
                 <div class="topics">
-                  <p><ion-icon name="checkmark-outline"></ion-icon> Sem fila</p>
-                  <p><ion-icon name="checkmark-outline"></ion-icon> Salva Arquivos</p>
-                  <p><ion-icon name="checkmark-outline"></ion-icon> 8 Núcleos</p>
-                  <p><ion-icon name="checkmark-outline"></ion-icon> 22GB RAM</p>
-                  <p><ion-icon name="checkmark-outline"></ion-icon> Contém spot</p>
+                  <p><img src="./assets/sem fila.png" alt=""> Sem fila</p>
+                  <p><img src="./assets/arquivo.png" alt=""> Salva Arquivos</p>
+                  <p><img src="./assets/nucleo.png" alt=""> 8 Núcleos</p>
+                  <p><img src="./assets/ram.png" alt=""> 22GB RAM</p>
+                  <p><img src="./assets/spot.png" alt=""> Contém spot</p>
                 </div>
   
                 <a href="#"><button>ASSINAR AGORA</button></a>
@@ -444,17 +449,19 @@
                 <h3>R$149,90<span>/Mês</span></h3>
                 
                 <div class="topics">
-                  <p><ion-icon name="checkmark-outline"></ion-icon> Sem fila</p>
-                  <p><ion-icon name="checkmark-outline"></ion-icon> Salva Arquivos</p>
-                  <p><ion-icon name="checkmark-outline"></ion-icon> 16 Núcleos</p>
-                  <p><ion-icon name="checkmark-outline"></ion-icon> 32GB RAM</p>
-                  <p><ion-icon name="checkmark-outline"></ion-icon> Contém spot</p>
+                  <p><img src="./assets/sem fila.png" alt=""> Sem fila</p>
+                  <p><img src="./assets/arquivo.png" alt=""> Salva Arquivos</p>
+                  <p><img src="./assets/nucleo.png" alt=""> 16 Núcleos</p>
+                  <p><img src="./assets/ram.png" alt=""> 32GB RAM</p>
+                  <p><img src="./assets/spot.png" alt=""> Contém spot</p>
                 </div>
   
                 <a href="#"><button>ASSINAR AGORA</button></a>
               </div>
             </div>
           </div>
+
+          <a href="./planos/index.html"><button>Veja todos os planos</button></a>
         </div>
       </div>
 
@@ -587,7 +594,7 @@
               <div class="redes-sociais">
                   <h3>Social</h3>
                   <div class="icons">
-                      <a target="_blank" href="https://www.instagram.com/luistrowman/?utm_source=ig_web_button_share_sheet"><ion-icon name="logo-instagram"></ion-icon></a>
+                      <a target="_blank" href="https://www.instagram.com/spacecloud.gg/"><ion-icon name="logo-instagram"></ion-icon></a>
                   </div>
               </div>
           </div>

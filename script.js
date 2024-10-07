@@ -68,6 +68,7 @@ const modal = document.getElementById("modalLogin");
 const openModalBtn = document.getElementById("openModalLogin");
 const closeModalBtn = document.querySelector(".close");
 
+
 // Abrir o modal ao clicar no botão
 openModalBtn.onclick = function() {
     modal.style.display = "block";

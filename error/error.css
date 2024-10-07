@@ -1,0 +1,103 @@
+#error {
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#error .content {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 11;
+}
+
+#error .image {
+    width: 100%;
+}
+
+#error .image img {
+    width: 100%;
+}
+
+#error .text {
+    text-align: center;
+}
+
+#error .text h2 {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    line-height: 1;
+
+    margin-bottom: 1rem;
+}
+
+#error .text span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+#error .text p {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #cec9db;
+
+    margin-bottom: 2rem;
+}
+
+#error .text button {
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    background: var(--gradient);
+    border: none;
+}
+
+#error .text button:hover {
+    filter: brightness(1.2);
+    box-shadow:  12px 12px 25px #140e1e,
+             -12px -12px 25px #1a1228;
+}
+
+@media (min-width: 1080px) {
+    section#error .wrapper {
+        height: 100%;
+    }
+
+    section#error .content {
+        display: grid;
+        grid-template-columns: 1fr 1.4fr;
+        align-items: center;
+        height: 100%;
+    }
+
+    section#error .text {
+        text-align: left;
+    }
+    
+    section#error .text h2 {
+        font-size: 6rem;
+        line-height: .9;
+        margin-bottom: 1rem;
+    }
+    
+    section#error .text p {
+        font-size: 2rem;
+        line-height: 1.3;
+        font-weight: 400;
+        color: #cec9db;
+
+        margin-bottom: 3rem;
+    }
+}

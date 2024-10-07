@@ -12,29 +12,258 @@
 }
 
 .modal .content {
-    background-color: #fefefe;
-    margin: 15% auto; 
-    padding: 2rem;
-    border: 1px solid #888;
-    width: 80%; 
-    max-width: 500px;
-    border-radius: 8px;
+    background: transparent;
+    margin: 12% auto; 
+    width: 90%; 
+    max-width: 700px;
+    border-radius: 2rem;
     position: relative;
+    overflow: hidden;
+
+    box-shadow:  20px 20px 60px #050215b5,
+             -20px -20px 60px #0b0329;
 }
 
 .close {
     position: absolute;
-    top: 2px;
+    top: 1px;
     right: 10px;
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 300;
     cursor: pointer;
+    z-index: 2;
+
+    transition: all 200ms ease-in-out;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
+    color: #A482FA;
     text-decoration: none;
     cursor: pointer;
+}
+
+.cadastro {
+    padding: 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.cadastro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #4572FA, #A482FA);
+    z-index: 1;
+    opacity: .8;
+}
+
+.cadastro img.bg-cadastro {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    object-fit: cover;
+    width: 120%;
+    z-index: 0;
+}
+
+.cadastro .text {
+    position: relative;
+    z-index: 1;
+}
+
+.cadastro h2 {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 3rem;
+    color: #fff;
+
+    margin-bottom: 1rem;
+}
+
+.cadastro p {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #fff;
+
+    margin-bottom: 2rem;
+}
+
+.cadastro a button {
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    background: linear-gradient(to right, #0D0816, #332649);
+    border: none;
+}
+
+.cadastro a button:hover {
+    filter: brightness(1.15);
+    box-shadow:  12px 12px 25px #140e1e15,
+             -12px -12px 25px #1a122819;
+}
+
+.login {
+    padding: 4rem;
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(140deg, #06133a, #000014, #000014, #1f0f47);
+}
+
+.login h2 {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 3rem;
+    color: #fff;
+
+    margin-bottom: 1rem;
+}
+
+.login p {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #cec9db;
+
+
+    margin-bottom: 2rem;
+}
+
+.login form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.login label {
+    color: #fff;
+}
+
+.login input {
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+
+    color: #cec9db;
+
+    border: none;
+
+    background: linear-gradient(140deg, #4572fa0d, #0000001e, #0000001d,#a482fa1d);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    box-shadow:  9px 9px 17px #0502151c,
+             -9px -9px 17px #07021d30;
+}
+
+.login label:focus {
+    outline: 1px solid #ffffff26;
+    border: none;
+}
+
+.login input::placeholder {
+    color: #ffffff95;
+}
+
+.login .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 1rem;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.login a {
+    width: 100%;
+}
+
+.login a:nth-child(1) {
+    color: #cec9dbd1;
+    font-size: 1.4rem;
+
+    transition: all 200ms ease-in;
+}
+
+.login a:nth-child(1):hover {
+    filter: brightness(1.2);
+}
+
+.login a button {
+    width: 100%;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    background: var(--gradient);
+    border: none;
+  }
+
+.login a button:hover {
+    filter: brightness(1.2);
+    box-shadow:  12px 12px 25px #140e1e,
+             -12px -12px 25px #1a1228;
+}
+
+@media (min-width: 1080px) {
+    .modal .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        max-width: 60%;
+    }
+
+    .close {
+        font-size: 4rem;
+    }
+
+    .modal .cadastro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 8rem;
+    }
+
+    .modal .login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        padding: 8rem;
+    }
+
+    .modal .login .buttons {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        padding-left: 0;
+    }
+
+    .cadastro h2,
+    .login h2 {
+        font-size: 4rem;
+    }
+
+    .cadastro p {
+        font-size: 1.8rem;
+    }
+    
+    .cadastro a button {
+        font-size: 2rem;
+    }
 }

@@ -49,7 +49,7 @@
     align-items: center;
   }
 
-  #home span {
+  #home span.span {
     width: max-content;
     font-size: 1.5rem;
     font-family: "Bai Jamjuree", sans-serif;

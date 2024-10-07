@@ -1,0 +1,199 @@
+#redes {
+    min-height: 100vh;
+    padding-block: 10rem;
+}
+
+#redes .content {
+    position: relative;
+    z-index: 11;
+
+    padding-bottom: 10rem;
+}
+
+#redes header {
+    margin-bottom: 5rem;
+}
+
+#redes header h2 {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+
+    margin-bottom: .5rem;
+}
+
+#redes header h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+#redes header p {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #cec9db;
+
+    margin-bottom: 2rem;
+}
+
+#redes header p span {
+    color: #fff;
+}
+
+#redes .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#redes .card {
+    background: linear-gradient(140deg, #4572fa0f, #a482fa0d);
+    border: 1px solid #ffffff0c;
+    backdrop-filter: blur(6px) saturate(130%);
+    -webkit-backdrop-filter: blur(6px) saturate(130%);
+    box-shadow:  9px 9px 17px #05021544,
+             -9px -9px 17px #07021d4c;
+
+    padding: 2rem;
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#redes .card .icon ion-icon {
+    font-size: 3rem;
+    background: var(--gradient);
+    padding: .5rem;
+    border-radius: 1rem;
+    color: #fff;
+    line-height: 0;
+}
+
+#redes .card h3 {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+#redes .card a {
+    text-decoration: none;
+}
+
+#redes .card button {
+    margin-top: 2rem;
+
+    border-radius: .5rem;
+    width: 100%;
+    border: none;
+    padding: .5rem 3rem;
+    background: var(--gradient);
+    color: #fff;
+    font-size: 1.8rem;
+
+    transition: all 200ms ease-in-out;
+}
+
+#redes .card button:hover {
+    color: #ffffff;
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+@media (min-width: 1080px) {
+    section#redes {
+        height: 100vh;
+        max-height: 100vh;
+        padding-top: 17rem;
+    }
+
+    section#redes header {
+        margin-bottom: 6rem;
+    }
+    
+    section#redes header h2 {
+        font-family: "Bai Jamjuree", sans-serif;
+        font-size: 5rem;
+        color: #fff;
+        line-height: .9;
+        margin-bottom: 1rem;
+    }
+    
+    section#redes header p {
+        font-size: 1.6rem;
+        line-height: 1.3;
+        font-weight: 400;
+        color: #cec9db;
+
+        margin-bottom: 3rem;
+    }
+
+    section#redes .card {
+        width: 90%;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 3rem;
+        padding-block: 2rem;
+        border-radius: 3rem;
+
+        padding-inline: 2%;
+    }
+
+    section#redes .card .head {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    section#redes .card h3 {
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 0;
+        font-size: 2.5rem;
+        line-height: 1;
+    }
+
+    section#redes .card p {
+        font-size: 1.6rem;
+    }
+
+    section#redes .card a button {
+        margin-top: 0;
+    }
+}
+
+
+@media (min-width: 1080px) {
+    section#redes .wrapper {
+      width: min(100rem, 100%);
+    }
+  }
+
+  @media (min-width: 1200px) {
+    section#redes .wrapper {
+      width: min(110rem, 100%);
+    }
+  }
+
+  @media (min-width: 1400px) {
+    section#redes .wrapper {
+      width: min(120rem, 100%);
+    }
+  }
+
+  @media (min-width: 1700px) {
+    section#redes .wrapper {
+      width: min(130rem, 100%);
+    }
+}
