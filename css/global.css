@@ -27,6 +27,12 @@
   src: url(../fonts/Inter-V.ttf);
 }
 
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
 #particles-js {
   background-color: transparent;
   opacity: .7;

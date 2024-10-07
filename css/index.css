@@ -9,10 +9,11 @@
 @import './sectionLoja.css';
 @import './sectionFaq.css';
 @import './sectionDuvida.css';
-
 @import './footer.css';
 
 @import './modalLogin.css';
+
+@import './preloader.css';
 
 
 
