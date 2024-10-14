@@ -1,0 +1,156 @@
+nav#navigation details#cadastrado {
+    display: none;
+}
+
+nav#navigation.cadastrado details#cadastrado {
+    display: inherit;
+}
+
+nav#navigation.cadastrado .buttons {
+    display: none;
+}
+
+#navigation details {
+    height: 4.5rem;
+    width: 25rem;
+    max-width: 25rem;
+}
+
+#navigation summary.summary {
+    backdrop-filter: blur(36px) saturate(200%);
+    -webkit-backdrop-filter: blur(36px) saturate(200%);
+    background: linear-gradient(140deg, #4572fa10, #0000000f, #00000010,#a482fa11);
+    
+    padding: 1rem;
+    padding-inline: 2rem;
+    border-radius: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+#navigation summary.summary img {
+    width: 2rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: .1rem;
+}
+
+#navigation details[open] summary.summary {
+    background: var(--gradient);
+    border-radius: 2rem 2rem 0 0;
+}
+
+#navigation summary.summary h2 {
+    color: #fff;
+    max-width: 18rem;
+    overflow: hidden;
+    max-height: 2rem;
+}
+
+#navigation summary .arrow {
+    font-size: 2rem;
+    color: #fff;
+}
+  
+#navigation details .options {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 2rem 2rem;
+
+    padding: 2rem;
+
+    backdrop-filter: blur(66px) saturate(300%);
+    -webkit-backdrop-filter: blur(66px) saturate(300%);
+    background: linear-gradient(140deg, #4572fa10, #00000039, #00000029,#a482fa26);
+}
+
+#navigation details .options .option {
+    width: 100%;
+
+    padding: 1rem;
+    color: #fff;
+    margin-top: 1rem;
+    border-radius: 1rem;
+
+    transition: all 200ms ease-in-out;
+}
+
+#navigation details .options .option:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+#navigation details .options .option a {
+    color: #fff;
+    font-weight: 500;
+}
+
+#navigation details .options .option:nth-child(1) {
+    background: #ffffff;
+}
+
+#navigation details .options .option:nth-child(1):hover {
+    background: #b4b4b4;
+}
+
+#navigation details .options .option:nth-child(1) a {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+#navigation details .options .option:nth-child(2) {
+    background: var(--gradient);
+    color: #fff;
+}
+
+#navigation details .options .option:nth-child(3) {
+    margin-top: 3rem;
+    outline: 1px solid #E7AB52;
+}
+
+#navigation details .options .option:nth-child(3):hover,
+#navigation details .options .option:nth-child(4):hover,
+#navigation details .options .option:nth-child(5):hover,
+#navigation details .options .option:nth-child(6):hover {
+    background: #ffffff12;
+}
+
+#navigation details .options .option:nth-child(4) {
+    outline: 1px solid #5EEAE7;
+}
+
+#navigation details .options .option:nth-child(5) {
+    outline: 1px solid #9851F6;
+}
+
+#navigation details .options .option:nth-child(6) {
+    outline: 1px solid #F65DAB;
+}
+
+#navigation details .options .option:nth-child(7) {
+    margin-top: 3rem;
+    background: #F35355;
+}
+
+#navigation details a img.icone {
+    display: none;
+}
+
+@media (min-width: 1080px) {
+    nav#navigation details .option {
+        position: relative;
+    }
+
+    nav#navigation details img.icone {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        left: 6%;
+        display: inherit;
+        width: 1.5rem;
+    }
+}

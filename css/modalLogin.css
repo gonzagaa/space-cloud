@@ -24,7 +24,9 @@
              -20px -20px 60px #0b0329;
 }
 
-.close {
+.close,
+.closeRecuperar,
+.closeAlterar {
     position: absolute;
     top: 1px;
     right: 10px;
@@ -38,7 +40,11 @@
 }
 
 .close:hover,
-.close:focus {
+.closeRecuperar:hover,
+.closeAlterar:hover,
+.close:focus,
+.closeRecuperar:focus,
+.closeAlterar:focus {
     color: #A482FA;
     text-decoration: none;
     cursor: pointer;
@@ -185,6 +191,10 @@
     margin-top: 1rem;
 }
 
+.login .buttons a {
+    text-decoration: underline;
+}
+
 .login a {
     width: 100%;
 }
@@ -200,7 +210,12 @@
     filter: brightness(1.2);
 }
 
-.login a button {
+.login a.button {
+    text-decoration: none;
+}
+
+.login a button,
+.login a.button { 
     width: 100%;
     font-size: 1.8rem;
     color: #fff;
@@ -210,9 +225,10 @@
     cursor: pointer;
     background: var(--gradient);
     border: none;
-  }
+}
 
-.login a button:hover {
+.login a button:hover,
+.login a.button:hover {
     filter: brightness(1.2);
     box-shadow:  12px 12px 25px #140e1e,
              -12px -12px 25px #1a1228;
@@ -226,7 +242,9 @@
         max-width: 60%;
     }
 
-    .close {
+    .close,
+    .closeRecuperar,
+    .closeAlterar {
         font-size: 4rem;
     }
 

@@ -1,13 +1,4 @@
-//Preloader ==============
-let elem_preloader = document.getElementById("preloader");
-let body = document.getElementById("body");
 
-body.classList.add('no-scroll');
-
-  setTimeout(function() {
-    elem_preloader.classList.remove("preloader");
-    body.classList.remove("no-scroll");
-  }, 5280);
 
 //menu navigation ==============
 window.addEventListener('scroll', onScroll)
@@ -75,25 +66,81 @@ AOS.init({
 });
 
 // Modal Login
-const modal = document.getElementById("modalLogin");
-const openModalBtn = document.getElementById("openModalLogin");
+const modalLogin = document.getElementById("modalLogin");
+const openModalBtns = document.querySelectorAll(".openModalLogin");
 const closeModalBtn = document.querySelector(".close");
 
 
 // Abrir o modal ao clicar no botão
-openModalBtn.onclick = function() {
-    modal.style.display = "block";
-}
+openModalBtns.forEach(button => {
+  button.onclick = function() {
+      modalLogin.style.display = "inherit";
+  };
+});
 
 // Fechar o modal ao clicar no "X"
 closeModalBtn.onclick = function() {
-    modal.style.display = "none";
+    modalLogin.style.display = "none";
 }
 
 // Fechar o modal ao clicar fora do conteúdo
 window.onclick = function(event) {
-    if (event.target === modal) {
-        modal.style.display = "none";
+    if (event.target === modalLogin) {
+        modalLogin.style.display = "none";
     }
 }
+
+// Modal Recuperar Senha
+const modalRecuperar = document.getElementById("modalRecuperar");
+const openModalBtnsRecuperar = document.querySelectorAll(".openModalRecuperar");
+const closeModalBtnRecuperar = document.querySelector(".closeRecuperar");
+
+
+// Abrir o modal ao clicar no botão
+openModalBtnsRecuperar.forEach(button => {
+  button.onclick = function() {
+      modalRecuperar.style.display = "inherit";
+      modalLogin.style.display = "none";
+  };
+});
+
+// Fechar o modal ao clicar no "X"
+closeModalBtnRecuperar.onclick = function() {
+    modalRecuperar.style.display = "none";
+}
+
+// Fechar o modal ao clicar fora do conteúdo
+window.onclick = function(event) {
+    if (event.target === modalRecuperar) {
+        modalRecuperar.style.display = "none";
+    }
+}
+
+// Modal Alterar Senha
+const modalAlterar = document.getElementById("modalAlterar");
+const openModalBtnsAlterar = document.querySelectorAll(".openModalAlterar");
+const closeModalBtnAlterar = document.querySelector(".closeAlterar");
+
+
+// Abrir o modal ao clicar no botão
+openModalBtnsAlterar.forEach(button => {
+  button.onclick = function() {
+      modalAlterar.style.display = "inherit";
+      modalRecuperar.style.display = "none";
+  };
+});
+
+// Fechar o modal ao clicar no "X"
+closeModalBtnAlterar.onclick = function() {
+    modalAlterar.style.display = "none";
+}
+
+// Fechar o modal ao clicar fora do conteúdo
+window.onclick = function(event) {
+    if (event.target === modalAlterar) {
+        modalAlterar.style.display = "none";
+    }
+}
+
+
 

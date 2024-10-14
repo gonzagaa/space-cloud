@@ -138,6 +138,7 @@
 }
 
 #registro input {
+    position: relative;
     margin-top: 1rem;
     width: 100%;
     border-radius: 1rem;
@@ -164,6 +165,29 @@
 
 #registro input::placeholder {
     color: #ffffff95;
+}
+
+#registro .input {
+    position: relative;
+}
+
+#registro .input .estrangeiro {
+    position: absolute;
+    z-index: 2;
+    right: 2%;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#registro .input .estrangeiro label {
+    margin-left: 0;
+}
+
+#registro .input .estrangeiro input {
+    background: transparent;
+    margin: 0;
 }
 
 #registro .input.genero .buttons-genero {

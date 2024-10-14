@@ -30,38 +30,103 @@
 <body id="bodySuporte">
 
    <!-- Modal Login -->
-    <div id="modalLogin" class="modal">
-      <div class="content">
-          <span class="close">&times;</span>
-          
-          <div class="cadastro">
-            <div class="text">
-              <h2>Olá, Tudo Bem?</h2>
-              <p>Você é novo por aqui e não tem uma conta? faça seu cadastro para você poder começar a se divertir!</p>
-              <a href="#"><button>Cadastrar</button></a>
+   <div id="modalLogin" class="modal">
+    <div class="content">
+        <span class="close">&times;</span>
+        
+        <div class="cadastro">
+          <div class="text">
+            <h2>Olá, Tudo Bem?</h2>
+            <p>Você é novo por aqui e não tem uma conta? faça seu cadastro para você poder começar a se divertir!</p>
+            <a href="#"><button>Cadastrar</button></a>
+          </div>
+
+          <img class="bg-cadastro" src="../assets/astronauta spacecloud.jpg" alt="">
+        </div>
+
+        <div class="login">
+          <h2>Faça seu <span>login</span></h2>
+          <p>Digite suas credenciais para acessar sua conta</p>
+
+          <form action="">
+            <label for="email"></label>
+            <input type="email" id="email" placeholder="Digite seu e-mail">
+
+            <label for="senha"></label>
+            <input type="password" id="senha" placeholder="Digite sua senha">
+
+            <div class="buttons">
+              <a class="openModalRecuperar">Esqueceu sua senha?</a>
+              <a href="#"><button>Entrar</button></a>
             </div>
+          </form>
+        </div>
+    </div>
+    </div>
 
-            <img class="bg-cadastro" src="../assets/astronauta spacecloud.jpg" alt="">
+    <!-- Modal Recuperar Senha -->
+    <div id="modalRecuperar" class="modal">
+    <div class="content">
+        <span class="closeRecuperar">&times;</span>
+        
+        <div class="cadastro">
+          <div class="text">
+            <h2>Não se preocupe!</h2>
+            <p>Mais alguns passos e resolveremos tudo pra você, caso encontre dificuldades, entre em contato com nosso suporte 24hs.</p>
           </div>
 
-          <div class="login">
-            <h2>Faça seu <span>login</span></h2>
-            <p>Digite suas credenciais para acessar sua conta</p>
+          <img class="bg-cadastro" src="../assets/astronauta spacecloud.jpg" alt="">
+        </div>
 
-            <form action="">
-              <label for="email"></label>
-              <input type="email" id="email" placeholder="Digite seu e-mail">
+        <div class="login">
+          <h2>Digite seu <span>email</span> para recuperação</h2>
+          <p>Enviaremos um email para recuperação de senha.</p>
 
-              <label for="senha"></label>
-              <input type="password" id="senha" placeholder="Digite sua senha">
+          <form action="">
+            <label for="email"></label>
+            <input type="email" id="emailRecuperar" placeholder="Digite seu e-mail">
 
-              <div class="buttons">
-                <a href="#">Esqueceu sua senha?</a>
-                <a href="#"><button>Entrar</button></a>
-              </div>
-            </form>
+            <div class="buttons">
+              <a href="../suporte/index.html">Encontre suporte</a>
+              <a class="openModalAlterar button">Enviar</a>
+            </div>
+          </form>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal Alterar Senha -->
+    <div id="modalAlterar" class="modal">
+    <div class="content">
+        <span class="closeAlterar">&times;</span>
+        
+        <div class="cadastro">
+          <div class="text">
+            <h2>Não se preocupe!</h2>
+            <p>Mais alguns passos e resolveremos tudo pra você, caso encontre dificuldades, entre em contato com nosso suporte 24hs.</p>
           </div>
-      </div>
+
+          <img class="bg-cadastro" src="../assets/astronauta spacecloud.jpg" alt="">
+        </div>
+
+        <div class="login">
+          <h2>Digite sua nova <span>senha de login</span></h2>
+          <p>Sua senha antiga será alterada</p>
+
+          <form action="">
+            <label for="novaSenha"></label>
+            <input type="password" id="novaSenha" placeholder="Digite sua nova senha">
+
+            <label for="confirmaSenha"></label>
+            <input type="password" id="confirmaSenha" placeholder="Confirme sua nova senha">
+
+            <div class="buttons">
+              <a href="../suporte/index.html">Encontre suporte</a>
+              <a href="#"><button>Salvar</button></a>
+            </div>
+          </form>
+        </div>
+    </div>
     </div>
 
     <div id="particles-js">
@@ -83,8 +148,51 @@
                 <li><a onclick="closeMenu()" href="../index.html#faq">FAQ</a></li>
               </ul>
 
+              <details id="cadastrado">
+                <summary class="summary">
+                  <img src="../assets/mini logo spacecloud.png" alt="">
+                  <h2>Nome do usuário</h2>
+                  <span class="arrow">&#9662;</span>
+                </summary>
+
+                <div class="options">
+                  <div class="option">
+                    <a href="#">Painel</a>
+                  </div>
+
+                  <div class="option">
+                    <a href="#">Configurações</a>
+                    <img class="icone" src="../assets/configuracoes space.png" alt="">
+                  </div>
+
+                  <div class="option">
+                    <a href="#">Notificações</a>
+                    <img class="icone" src="../assets/notificacoes space.png" alt="">
+                  </div>
+                  
+                  <div class="option">
+                    <a href="#">Faturas</a>
+                    <img class="icone" src="../assets/faturas space.png" alt="">
+                  </div>
+                  
+                  <div class="option">
+                    <a href="#">Carrinho</a>
+                    <img class="icone" src="../assets/carrinho space.png" alt="">
+                  </div>
+                  
+                  <div class="option">
+                    <a href="#">Máquinas</a>
+                    <img class="icone" src="../assets/maquinas space.png" alt="">
+                  </div>
+
+                  <div class="option">
+                    <a href="#">Sair</a>
+                  </div>
+                </div>
+              </details>  
+
               <div class="buttons">
-                <a onclick="closeMenu()" class="button" id="openModalLogin">
+                <a onclick="closeMenu()" class="button openModalLogin" >
                   <button>
                     Login
                   </button>
