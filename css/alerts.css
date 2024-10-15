@@ -37,7 +37,7 @@
     align-items: center;
     color: #fff;
     min-width: 300px;
-    right: -100%; /* Inicialmente fora da tela */
+    right: -150%; /* Inicialmente fora da tela */
     top: 20px; /* Ajuste a posição vertical do alerta */
     transition: right 0.5s ease;
     position: fixed; /* Agora o alerta é fixo na janela */

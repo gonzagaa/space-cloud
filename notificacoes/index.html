@@ -66,34 +66,46 @@
 
     <!-- Modal Recuperar Senha -->
     <div id="modalRecuperar" class="modal">
-    <div class="content">
-        <span class="closeRecuperar">&times;</span>
-        
-        <div class="cadastro">
-          <div class="text">
-            <h2>Não se preocupe!</h2>
-            <p>Mais alguns passos e resolveremos tudo pra você, caso encontre dificuldades, entre em contato com nosso suporte 24hs.</p>
-          </div>
-
-          <img class="bg-cadastro" src="../assets/astronauta spacecloud.jpg" alt="">
-        </div>
-
-        <div class="login">
-          <h2>Digite seu <span>email</span> para recuperação</h2>
-          <p>Enviaremos um email para recuperação de senha.</p>
-
-          <form action="">
-            <label for="email"></label>
-            <input type="email" id="emailRecuperar" placeholder="Digite seu e-mail">
-
-            <div class="buttons">
-              <a href="../suporte/index.html">Encontre suporte</a>
-              <a class="openModalAlterar button">Enviar</a>
+      <div class="content">
+          <span class="closeRecuperar">&times;</span>
+          
+          <div class="cadastro">
+            <div class="text">
+              <h2>Não se preocupe!</h2>
+              <p>Mais alguns passos e resolveremos tudo pra você, caso encontre dificuldades, entre em contato com nosso suporte 24hs.</p>
             </div>
-          </form>
-        </div>
-    </div>
-    </div>
+  
+            <img class="bg-cadastro" src="../assets/astronauta spacecloud.jpg" alt="">
+          </div>
+  
+          <div class="login enviarEmail">
+            <h2>Digite seu <span>email</span> para recuperação</h2>
+            <p>Enviaremos um email para recuperação de senha.</p>
+  
+            <form action="">
+              <label for="email"></label>
+              <input type="email" id="emailRecuperar" placeholder="Digite seu e-mail">
+  
+              <div class="buttons">
+                <a href="../suporte/index.html">Encontre suporte</a>
+                <a class="openEmailEnviado button">Enviar</a>
+              </div>
+            </form>
+          </div>
+  
+          <div class="login emailEnviado">
+            <h2>Email enviado com <span>sucesso</span>!</h2>
+            <p>Sucedemos ao enviar, verifique sua caixa de entrada ou spam.</p>
+  
+            <form action="">
+              <div class="buttons">
+                <a href="./suporte/index.html">Encontre suporte</a>
+                <a class="closeEmailEnviado button">Fechar</a>
+              </div>
+            </form>
+          </div>
+      </div>
+      </div>
 
     <!-- Modal Alterar Senha -->
     <div id="modalAlterar" class="modal">
