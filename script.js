@@ -94,6 +94,7 @@ window.onclick = function(event) {
 const modalRecuperar = document.getElementById("modalRecuperar");
 const openModalBtnsRecuperar = document.querySelectorAll(".openModalRecuperar");
 const closeModalBtnRecuperar = document.querySelector(".closeRecuperar");
+const closeModalRecuperar = document.querySelector(".closeEmailEnviado");
 
 
 // Abrir o modal ao clicar no botão
@@ -109,12 +110,29 @@ closeModalBtnRecuperar.onclick = function() {
     modalRecuperar.style.display = "none";
 }
 
+// Fechar o modal ao clicar no botão
+closeModalRecuperar.onclick = function() {
+  modalRecuperar.style.display = "none";
+}
+
 // Fechar o modal ao clicar fora do conteúdo
 window.onclick = function(event) {
     if (event.target === modalRecuperar) {
         modalRecuperar.style.display = "none";
     }
 }
+
+document.querySelector('.openEmailEnviado').addEventListener('click', function(event) {
+  event.preventDefault();  // Para evitar comportamento padrão do link
+
+  // Esconder a caixa .login
+  document.querySelector('.login.enviarEmail').style.display = 'none';
+  
+  // Mostrar a caixa .login.emailEnviado
+  document.querySelector('.login.emailEnviado').style.display = 'block';
+});
+
+
 
 // Modal Alterar Senha
 const modalAlterar = document.getElementById("modalAlterar");
@@ -141,6 +159,52 @@ window.onclick = function(event) {
         modalAlterar.style.display = "none";
     }
 }
+
+// Alerts
+document.addEventListener('DOMContentLoaded', () => {
+  const alertButtons = document.querySelectorAll('.btn-alert');
+  const closeButtons = document.querySelectorAll('.close-alert');
+
+  // Função para exibir o alerta
+  const showAlert = (alertClass) => {
+      const alert = document.querySelector(`.alert-${alertClass}`);
+      alert.classList.add('show-alert');
+
+      // Fechar automaticamente após 5 segundos
+      setTimeout(() => {
+          closeAlert(alert);
+      }, 5000);
+  };
+
+  // Função para fechar o alerta
+  const closeAlert = (alert) => {
+      alert.classList.remove('show-alert');
+      alert.classList.add('hide-alert');
+
+      // Remover completamente o alerta da tela após a animação
+      setTimeout(() => {
+          alert.classList.remove('hide-alert');
+      }, 500);
+  };
+
+  // Atribuir evento aos botões de alerta
+  alertButtons.forEach(button => {
+      button.addEventListener('click', () => {
+          const alertType = button.getAttribute('data-alert');
+          showAlert(alertType);
+      });
+  });
+
+  // Atribuir evento ao ícone de fechar
+  closeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+          const alert = button.closest('.alert');
+          closeAlert(alert);
+      });
+  });
+});
+
+
 
 
 

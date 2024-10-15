@@ -92,7 +92,7 @@
             <img class="bg-cadastro" src="./assets/astronauta spacecloud.jpg" alt="">
           </div>
 
-          <div class="login">
+          <div class="login enviarEmail">
             <h2>Digite seu <span>email</span> para recuperação</h2>
             <p>Enviaremos um email para recuperação de senha.</p>
 
@@ -102,7 +102,19 @@
 
               <div class="buttons">
                 <a href="./suporte/index.html">Encontre suporte</a>
-                <a class="openModalAlterar button">Enviar</a>
+                <a class="openEmailEnviado button">Enviar</a>
+              </div>
+            </form>
+          </div>
+
+          <div class="login emailEnviado">
+            <h2>Email enviado com <span>sucesso</span>!</h2>
+            <p>Sucedemos ao enviar, verifique sua caixa de entrada ou spam.</p>
+
+            <form action="">
+              <div class="buttons">
+                <a href="./suporte/index.html">Encontre suporte</a>
+                <a class="closeEmailEnviado button">Fechar</a>
               </div>
             </form>
           </div>
@@ -731,6 +743,42 @@
 
       <img class="bg" src="./assets/footer bg.png" alt="">
     </footer>
+
+   <!-- Exemplo de surgimento do alerta -->
+    <!-- <div class="buttons alertButton">
+      <button class="btn-alert" data-alert="standard">Abrir Alerta Standard</button>
+      <button class="btn-alert" data-alert="info">Abrir Alerta Info</button>
+      <button class="btn-alert" data-alert="success">Abrir Alerta Sucesso</button>
+      <button class="btn-alert" data-alert="warning">Abrir Alerta Aviso</button>
+      <button class="btn-alert" data-alert="danger">Abrir Alerta Perigo</button>
+    </div> -->
+
+    <!-- Estrutura dos alertas -->
+        <div class="alert alert-standard">
+            <ion-icon name="alert-circle-outline"></ion-icon>
+            <h4><span>Standard</span>: Esse é um alerta padrão</h4>
+            <ion-icon class="close-alert" name="close-outline"></ion-icon>
+        </div>
+        <div class="alert alert-info">
+            <ion-icon name="information-circle-outline"></ion-icon>
+            <h4><span>Info</span>: Esse é um alerta de informação</h4>
+            <ion-icon class="close-alert" name="close-outline"></ion-icon>
+        </div>
+        <div class="alert alert-success">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <h4><span>Sucesso</span>: Esse é um alerta de sucesso</h4>
+            <ion-icon class="close-alert" name="close-outline"></ion-icon>
+        </div>
+        <div class="alert alert-warning">
+            <ion-icon name="warning-outline"></ion-icon>
+            <h4><span>Alerta</span>: Esse é um alerta de warning</h4>
+            <ion-icon class="close-alert" name="close-outline"></ion-icon>
+        </div>
+        <div class="alert alert-danger">
+            <ion-icon name="close-circle-outline"></ion-icon>
+            <h4><span>Danger</span>: Esse é um alerta de perigo</h4>
+            <ion-icon class="close-alert" name="close-outline"></ion-icon>
+        </div>
     
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cursor-outline" data-cursor-outline></div>

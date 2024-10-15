@@ -235,6 +235,10 @@
              -12px -12px 25px #1a1228;
 }
 
+.modal .login.emailEnviado {
+    display: none;
+}
+
 @media (min-width: 1080px) {
     .modal .content {
         display: grid;

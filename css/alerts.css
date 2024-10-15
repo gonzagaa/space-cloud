@@ -1,0 +1,166 @@
+/* Estilos para a área dos botões */
+.buttons.alertButton {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+    position: relative;
+    z-index: 100;
+}
+
+.buttons.alertButton button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.buttons.alertButton button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos gerais para os alertas */
+.alert-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+    flex-direction: column;
+}
+
+.alert {
+    display: none;
+    align-items: center;
+    color: #fff;
+    min-width: 300px;
+    right: -100%; /* Inicialmente fora da tela */
+    top: 20px; /* Ajuste a posição vertical do alerta */
+    transition: right 0.5s ease;
+    position: fixed; /* Agora o alerta é fixo na janela */
+    padding: 1.5rem;
+    border-radius: .5rem;
+    z-index: 1000; /* Certifique-se de que está acima de outros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.alert h4 {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.alert h4 span {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Background dos tipos de alerta */
+.alert-standard {
+    background: #484848;
+    border-left: 6px solid #1e1e1e;
+}
+
+.alert-info {
+    background: #79CBEE;
+    border-left: 6px solid #069dde;
+    color: #212529;
+}
+
+.alert-success {
+    background: #7BE651;
+    border-left: 6px solid #38c002;
+    color: #212529;
+}
+
+.alert-warning {
+    background: #E9B259;
+    border-left: 6px solid #bd7500;
+    color: #212529;
+}
+
+.alert-danger {
+    background: #E16161;
+    border-left: 6px solid #bb0202;
+}
+
+/* Cores dos icones dos tipos de alerta */
+.alert ion-icon {
+    font-size: 3rem;
+    margin-right: 1rem;
+    line-height: 0;
+}
+
+.alert-standard ion-icon {
+    color: #212121;
+}
+
+.alert-info ion-icon {
+    color: #006996;
+}
+
+.alert-success ion-icon {
+    color: #288d00;
+}
+
+.alert-warning ion-icon {
+    color: #a45501;
+}
+
+.alert-danger ion-icon {
+    color: #770000;
+}
+
+/* Cores dos icones de X dos tipos de alerta */
+.alert-standard .close-alert {
+    background: #21212153;
+}
+
+.alert-info .close-alert {
+    background: #00699624;
+}
+
+.alert-success .close-alert {
+    background: #288d0024;
+}
+
+.alert-warning .close-alert {
+    background: #a4550121;
+}
+
+.alert-danger .close-alert {
+    background: #77000025;
+}
+
+/* Estilo do botão de fechar */
+.close-alert {
+    margin-left: 1rem;
+    cursor: pointer;
+    font-size: 24px;
+
+    border-radius: 50%;
+    padding: .5rem;
+    transition: all 200ms ease-in-out;
+}
+
+.close-alert:hover {
+    filter: brightness(2);
+}
+
+/* Animação de entrada e saída */
+.show-alert {
+    display: flex !important;
+    right: 20px !important; /* Quando aparecer, mova para dentro da tela */
+}
+
+/* Animação de saída */
+.hide-alert {
+    right: -100% !important; /* Saindo novamente da tela */
+}
+
