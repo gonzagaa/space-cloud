@@ -138,7 +138,7 @@
       }
 
       header#home h1 {
-        font-size: 8rem;
+        font-size: 6rem;
         width: 70%;
         line-height: 1.1;
       }
@@ -242,13 +242,9 @@
 
   }
 
-  @media (min-width: 1400px) {
-
-  }
-
-  @media (min-width: 2000px) {
-    header#home .circle {
-      top: 1080px;
+  @media (min-width: 1500px) {
+    header#home h1 {
+      font-size: 8rem;
     }
   }
 

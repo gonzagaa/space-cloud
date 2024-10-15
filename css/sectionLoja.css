@@ -218,12 +218,9 @@
         background: var(--black-color);
         padding: 0;
         padding-block: 5rem;
-
-        transform: scale(.9);
     }
 
     section#loja .cards .card.card.recomendado {
-        transform: scale(1);
         backdrop-filter: blur(0px);
         -webkit-backdrop-filter: blur(0px);
         background: var(--black-color);

@@ -141,6 +141,82 @@ button#carrinhoButton:hover {
     width: 2.8rem;
 }
 
+#planos .dropdown {
+    margin-top: 3rem;
+    position: relative;
+}
+
+#planos .dropdown select {
+    font-size: 1.3rem;
+    cursor: pointer;
+    border: 1px solid #ffffff2f;
+    font-family: "Bai Jamjuree", sans-serif;
+    background: linear-gradient(140deg, #4572fa0d, #0000001e, #0000001d,#a482fa1d);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    color: #fff;
+
+    -webkit-appearance: none; /* Remove a seta no Chrome e Safari */
+    -moz-appearance: none; /* Remove a seta no Firefox */
+    appearance: none; /* Remove a seta nos navegadores mais recentes */
+}
+
+#planos .dropdown select option {
+    background-color: #100039;
+    color: white; 
+    padding: 1rem; 
+}
+
+#planos .dropdown ion-icon {
+    z-index: 2;
+    top: 50%;
+    right: 3%;
+    transform: translate(0, -50%);
+    position: absolute;
+    color: #fff;
+    font-size: 2rem;
+}
+  
+#planos .cards .card .fpsDisplay {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+  
+#planos .cards .card .fpsBox {
+    border: 1px solid #ffffff2f;
+    font-family: "Bai Jamjuree", sans-serif;
+    background: linear-gradient(140deg, #4572fa0d, #0000001e, #0000001d,#a482fa1d);
+    backdrop-filter: blur(16px) saturate(160%);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    border-radius: 1rem;
+    padding: 2rem;
+    color: #fff;
+}
+  
+#planos .cards .card .hidden {
+    display: none;
+}
+
+#planos .cards .card .fpsBox span {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 2rem;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+#planos .cards .card .fpsBox p {
+    color: #fff;
+    margin-top: .3rem;
+    font-size: 1.1rem;
+}
+
 #planos .cards .card a button {
     margin-top: 4rem;
     border-radius: 1rem;
@@ -162,7 +238,7 @@ button#carrinhoButton:hover {
 #planos .cards .card a button ion-icon {
     font-size: 2rem;
     line-height: 0;
-}
+} 
 
 @media (min-width: 1080px) {
     section#planos {
@@ -218,6 +294,10 @@ button#carrinhoButton:hover {
     
     section#planos .cards .card .topics p img {
         width: 2.3rem;
+    }
+
+    section#planos .dropdown select {
+        font-size: 1.4rem;
     }
 }
 

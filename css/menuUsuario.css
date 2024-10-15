@@ -17,6 +17,7 @@ nav#navigation.cadastrado .buttons {
 }
 
 #navigation summary.summary {
+    cursor: pointer;
     backdrop-filter: blur(36px) saturate(200%);
     -webkit-backdrop-filter: blur(36px) saturate(200%);
     background: linear-gradient(140deg, #4572fa10, #0000000f, #00000010,#a482fa11);
@@ -29,6 +30,12 @@ nav#navigation.cadastrado .buttons {
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
+
+    transition: all 200ms ease-in-out;
+}
+
+#navigation summary.summary:hover {
+    background: linear-gradient(140deg, #4572fa4b, #0000000f, #00000010,#a482fa41);
 }
 
 #navigation summary.summary img {
@@ -65,7 +72,7 @@ nav#navigation.cadastrado .buttons {
 
     backdrop-filter: blur(66px) saturate(300%);
     -webkit-backdrop-filter: blur(66px) saturate(300%);
-    background: linear-gradient(140deg, #4572fa10, #00000039, #00000029,#a482fa26);
+    background: linear-gradient(140deg, #000c31c5, #000000ce, #000000d7,#0e012fe1);
 }
 
 #navigation details .options .option {

@@ -193,6 +193,7 @@
 
 .login .buttons a {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .login a {
@@ -239,7 +240,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
 
-        max-width: 60%;
+        max-width: 90%;
     }
 
     .close,
@@ -283,5 +284,11 @@
     
     .cadastro a button {
         font-size: 2rem;
+    }
+}
+
+@media (min-width: 1500px) {
+    .modal .content {
+        max-width: 60%;
     }
 }
