@@ -241,6 +241,7 @@
         grid-template-columns: 1fr 1fr;
 
         max-width: 90%;
+        margin: 7% auto; 
     }
 
     .close,
@@ -275,20 +276,52 @@
 
     .cadastro h2,
     .login h2 {
-        font-size: 4rem;
+        font-size: 2.5rem;
     }
 
     .cadastro p {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
+    }
+
+    .modal .login p {
+        font-size: 1.4rem;
     }
     
-    .cadastro a button {
-        font-size: 2rem;
+    .cadastro a button,
+    .login a button {
+        font-size: 1.2rem;
+    }
+
+    .modal input {
+        font-size: 1.2rem;
     }
 }
 
 @media (min-width: 1500px) {
     .modal .content {
         max-width: 60%;
+        margin: 12% auto; 
+    }
+
+    .cadastro h2,
+    .login h2 {
+        font-size: 4rem;
+    }
+
+    .cadastro p {
+        font-size: 1.6rem;
+    }
+
+    .modal .login p {
+        font-size: 1.6rem;
+    }
+    
+    .cadastro a button,
+    .login a button {
+        font-size: 2rem;
+    }
+
+    .modal input {
+        font-size: 1.6rem;
     }
 }
