@@ -211,7 +211,7 @@ i18next
   .init({
     lng: 'pt', // Idioma padrão
     backend: {
-      loadPath: '/locales/{{lng}}.json' // Caminho dos arquivos de tradução
+      loadPath: './locales/{{lng}}.json' // Caminho dos arquivos de tradução
     },
     fallbackLng: 'pt',
     debug: true
