@@ -1,0 +1,206 @@
+{
+    "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "store": "Store",
+    "faq": "FAQ",
+    "userName": "User Name",
+    "panel": "Dashboard",
+    "settings": "Settings",
+    "notifications": "Notifications",
+    "bills": "Invoices",
+    "cart": "Cart",
+    "machines": "Machines",
+    "logout": "Logout",
+    "login": "Login",
+    "register": "Register"
+  },
+  
+    "header": {
+      "span": "SPACE CLOUD",
+      "h1": "High performance in games and work",
+      "p": "The Best of Space Cloud, anywhere!",
+      "button": "SUBSCRIBE NOW"
+    },
+    "features": {
+      "lowLatency": "Low Latency",
+      "support": "24/7 Support",
+      "security": "Advanced Security",
+      "upgrade": "Easy Upgrade",
+      "scalability": "Scalability",
+      "backup": "Automatic Backups",
+      "globalNetwork": "Global Network",
+      "stability": "Stability",
+      "fastConnection": "Fast Connection"
+    },
+
+    "services": {
+    "title": "SERVICES",
+    "subtitle": "How can we help you?",
+    "card1": {
+      "title": "Customer Support",
+      "description": "Our support team is here to resolve all your needs and ensure a great experience."
+    },
+    "card2": {
+      "title": "High Performance",
+      "description": "The best machines with processing power and speed like you've never seen."
+    },
+    "card3": {
+      "title": "Varied Plans",
+      "description": "Various options from recommended to ideal, to choose according to your needs."
+    },
+    "button": "SUBSCRIBE NOW!"
+  },
+
+  "video": {
+    "title": "LEARN MORE",
+    "subtitle": "Space Cloud, this is your future!",
+    "button": "START NOW!"
+  },
+
+  "computacao": {
+    "title": "Cloud Computing",
+    "description": "Discover the best of the cloud with machines for gaming and work wherever and whenever you want.",
+    "activeUsers": "Active Users",
+    "button": "SUBSCRIBE NOW"
+  },
+
+  "acessibilidade": {
+    "title": "Accessibility",
+    "description": "Experience our services on multiple platforms. We're ready to deliver the best anywhere.",
+    "button": "SUBSCRIBE NOW"
+  },
+
+  "depoimentos": {
+    "title": "TESTIMONIALS",
+    "subtitle": "What our customers say?",
+    "description": "Check out some comments made by customers after a few days enjoying our services.",
+    "client1": {
+      "quote": "“The service is very good, 100% reliable, product delivery is very fast, and the machines are great. I recommend a plan of 6 cores or more if you want a good gaming experience. I started with the 6-core plan, but it didn’t run my games well, so I upgraded to 8 cores and it met my needs well.”",
+      "name": "DaniFull, client"
+    },
+    "client2": {
+      "quote": "“I wanted to put the machine to the test, I took Nier Automata, which has a reputation for being poorly optimized for PC, and I stuffed it with graphical mods, added reshade and HD textures, and the game would have crashed my PC if it weren't for Space Cloud. I'm excited to be able to play this wonderful game for the fourth time, thanks, guys.”",
+      "name": "Justice, client."
+    },
+    "client3": {
+      "quote": "”For those asking if it's worth it, I can say with all certainty that it is. Machines with high power, from the most basic plan to the best, and the best part is the file saving, which already puts Space Cloud ahead of many clouds; in support and service, they help and resolve your problems quickly.”",
+      "name": "Yuri, client."
+    },
+    "client4": {
+      "quote": "“It's the best VM I've ever used. It beats other clouds for things like not having a login queue, saving files, and having almost instant access. I bought the 4-core plan, and of all the games I tested, the heaviest one was Warzone, with excellent performance and 0 delay. It also handled the PS2 emulator with ease.”",
+      "name": "Felps, client."
+    },
+    "client5": {
+      "quote": "“I apologize for the times I criticized your system. The truth is that I play a game that's too heavy even for the latest generation machines. All the streaming services I tried couldn't handle it, but your 16-core machine is surreal. Even with HDD and not SSD, it surpasses other clouds for sure; it's an awesome PC.”",
+      "name": "Dilann, client."
+    },
+    "client6": {
+      "quote": "“After a month of use, I am impressed with the services from Space. The service is simply incredible; they really try to solve problems and are quick about it. It's a good investment considering the current prices of hardware, with incredible gameplay, no lags, and good quality.”",
+      "name": "Verstappen, client."
+    },
+    "client7": {
+      "quote": "“These guys continue to be incredible in support. My gaming experience is just success. This feedback is more for the community and the service from the guys inside. For someone as inexperienced as me, they help a lot to understand everything. Congratulations to the team you have today; my experience with Space is completely satisfactory.”",
+      "name": "Menossi, client."
+    }
+  },
+
+  "identificacao": {
+    "title": "SPACE CLOUD FOR YOU",
+    "subtitle": "Space Cloud is for you who are:",
+    "card1": {
+      "title": "Gamer",
+      "description": "Enjoy a seamless gaming experience with maximum performance, running the heaviest games on ultra quality without worrying about your local machine."
+    },
+    "card2": {
+      "title": "Developer",
+      "description": "Access robust machines ideal for compiling complex projects, running heavy virtual environments, or testing your applications with speed and efficiency."
+    },
+    "card3": {
+      "title": "Designer/Editor",
+      "description": "Render videos and work with heavy graphics without delays, leveraging the power of a machine made to handle large demands of creative software."
+    },
+    "card4": {
+      "title": "Data Science",
+      "description": "Execute massive data analyses, train AI models, and perform complex simulations with the advanced resources of our cloud machines."
+    },
+    "card5": {
+      "title": "Streamer",
+      "description": "Stream live with top-notch quality without overloading your local PC, taking advantage of Space Cloud's powerful processing to ensure a smooth streaming experience."
+    },
+    "card6": {
+      "title": "Entrepreneur",
+      "description": "Manage and scale your business with total flexibility, with machines that adapt to your workflow and ensure high performance for your IT demands."
+    }
+  },
+
+  "loja": {
+    "titulo": "STORE",
+    "subtitulo": "Plans and Subscriptions",
+    "planos": {
+      "basico": "BASIC GOOGLE",
+      "medio": "MEDIUM GOOGLE",
+      "pro": "PRO GOOGLE"
+    },
+    "atributos": {
+      "semfila": "No queue",
+      "salvaArquivos": "Save Files",
+      "gpu": "NVidia Tesla T4",
+      "nucleos6": "6 Cores",
+      "nucleos8": "8 Cores",
+      "nucleos16": "16 Cores",
+      "ram16": "16GB RAM",
+      "ram22": "22GB RAM",
+      "ram32": "32GB RAM",
+      "contaSpot": "Contains spot"
+    },
+    "botao": {
+      "assinar": "SUBSCRIBE NOW",
+      "verTodos": "See all plans"
+    }
+  },
+
+  "faq": {
+    "span": "FAQ",
+    "title": "Frequently Asked Questions",
+    "question1": "What is a 'cloud PC'?",
+    "answer1": "A cloud PC is a virtual machine accessed remotely from your device, without regional limitations, providing accessibility and comfort, with all the services and functionalities of a regular computer, but without the need to have the physical product in hand.",
+    "question2": "Can I update the system?",
+    "answer2": "No, all system components including drivers are designed for the best performance of your machine; altering these settings may reduce performance and even break the machine. Moreover, it is considered improper use of our services.",
+    "question3": "How does it work?",
+    "answer3": "Our system allows you to connect your device directly to a computer on our server. This computer is designed to provide the best performance for your activities, such as gaming, work, and more.",
+    "question4": "Does it work on Android and iOS?",
+    "answer4": "Yes, on Android, the first access can be done via RDP or VNC and then move on to using Moonlight or Parsec. On iOS, the first access also occurs via Remote Desktop or VNC, but it is not possible to use Moonlight and Parsec; the only compatible streaming app for iOS is Steam Link.",
+    "question5": "Can I play using RDP or VNC?",
+    "answer5": "No, RDP (Remote Desktop Protocol) and VNC (Virtual Network Computing) are only used for the first access, allowing you to link your Parsec, Moonlight, and Steam Link accounts. After linking your accounts, you must close RDP or VNC and play exclusively using Parsec, Moonlight, or Steam Link.",
+    "question6": "Why use a cloud PC?",
+    "answer6": "The costs to have a computer like those from Space Cloud, physically in hand, would reach around R$12,000, not to mention the maintenance costs that will come with usage over time; therefore, a cloud computer is much more cost-effective.",
+    "question7": "What is a Preemptive instance?",
+    "answer7": "Preemptive VM instances are a more affordable variant of standard VMs because these instances can be interrupted by the Compute Engine to recover computing capacity to redirect them to other VMs.",
+    "question8": "Will I lose my files when I shut down the machine?",
+    "answer8": "No, our services include saving your files in a 100% secure manner; just allocate these files and documents on one of the machine's hard drives, so your game files, work documents, and projects are not lost when you shut down or restart your machine.",
+    "question9": "Is there a login queue system?",
+    "answer9": "No, to make your experience more comfortable, we work without waiting queues, so you can access your machine whenever and wherever you want without wasting much of your time just for a login."
+  },
+
+  "support": {
+    "title": "Do you have any questions and want to know more?",
+    "message": "Contact the support team, and we will get back to you within 24 hours.",
+    "button": "SUPPORT"
+  },
+
+  "footer": {
+    "menu": "Menu",
+    "home": "Home",
+    "store": "Store",
+    "faq": "FAQ",
+    "social": "Social",
+    "links": "Links",
+    "terms": "Terms of Use",
+    "privacy": "Privacy Policy",
+    "cookies": "Cookies Policy",
+    "socials": "Social"
+  }
+
+}
+  

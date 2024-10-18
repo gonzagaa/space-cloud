@@ -1,0 +1,62 @@
+.language-switcher {
+    position: fixed;
+    z-index: 30;
+
+    top: 0;
+    
+    padding-inline: 3rem;
+    min-height: 4rem;
+    max-height: 4rem;
+    height: 4rem;
+
+    width: 100%;
+
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.512);
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+}
+
+.language-switcher button {
+    margin-top: 1rem;
+    border: none;
+    background: transparent;
+}
+
+.language-switcher button img {
+    width: 3rem;
+
+    transition: all 400ms ease-in-out;
+}
+
+.language-switcher button:hover img {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+.language-switcher button:active img {
+    transform: scale(1.2);
+    filter: brightness(2);
+}
+
+@media (min-width: 1080px) {
+    .language-switcher {
+        justify-content: center;
+        padding-inline: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        border-radius: 1rem;
+        top: 1rem;
+        
+        width: 10%;
+        gap: 2rem;
+    }
+
+    .language-switcher button {
+        margin-top: .25rem;
+    }
+}

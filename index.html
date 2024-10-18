@@ -28,6 +28,19 @@
 </head>
 <body id="body" class="">
 
+  <!-- Bandeiras para trocar idioma -->
+    <div class="language-switcher">
+      <button id="pt-btn" onclick="changeLanguage('pt')">
+        <img src="./assets/br spacecloud.png" alt="">
+      </button>
+      <button id="en-btn" onclick="changeLanguage('en')">
+        <img src="./assets/en spacecloud.png" alt="">
+      </button>
+      <button id="es-btn" onclick="changeLanguage('es')">
+        <img src="./assets/es spacecloud.png" alt="">
+      </button>
+    </div>
+
    <!-- Preloader -->
     <div class="preloader" id="preloader">
       <img class="bg" src="./assets/astronauta spacecloud.jpg" alt="">
@@ -160,246 +173,247 @@
     </div> 
 
    <!-- Menu Navigation (menu de usuario cadastrado fica visível ao adicionar class="cadastrado" na nav) -->
-    <nav id="navigation" class="">
-      <div class="wrapper">
-
-          <a class="logo" href="#home">
-              <img  src="./assets/logo spacecloud.svg" alt="Logo">
+   <nav id="navigation" class="">
+    <div class="wrapper">
+  
+      <a class="logo" href="#home">
+        <img src="./assets/logo spacecloud.svg" alt="Logo">
+      </a>
+  
+      <div class="menu">
+  
+        <ul>
+          <li><a onclick="closeMenu()" href="#home" data-i18n="navigation.home">Home</a></li>
+          <li><a onclick="closeMenu()" href="#services" data-i18n="navigation.services">Serviços</a></li>
+          <li><a onclick="closeMenu()" href="#loja" data-i18n="navigation.store">Loja</a></li>
+          <li><a onclick="closeMenu()" href="#faq" data-i18n="navigation.faq">FAQ</a></li>
+        </ul>
+  
+        <details id="cadastrado">
+          <summary class="summary">
+            <img src="./assets/mini logo spacecloud.png" alt="">
+            <h2 data-i18n="navigation.userName">Nome do usuário</h2>
+            <span class="arrow">&#9662;</span>
+          </summary>
+  
+          <div class="options">
+            <div class="option">
+              <a href="#" data-i18n="navigation.panel">Painel</a>
+            </div>
+  
+            <div class="option">
+              <a href="#" data-i18n="navigation.settings">Configurações</a>
+              <img class="icone" src="./assets/configuracoes space.png" alt="">
+            </div>
+  
+            <div class="option">
+              <a href="#" data-i18n="navigation.notifications">Notificações</a>
+              <img class="icone" src="./assets/notificacoes space.png" alt="">
+            </div>
+  
+            <div class="option">
+              <a href="#" data-i18n="navigation.bills">Faturas</a>
+              <img class="icone" src="./assets/faturas space.png" alt="">
+            </div>
+  
+            <div class="option">
+              <a href="#" data-i18n="navigation.cart">Carrinho</a>
+              <img class="icone" src="./assets/carrinho space.png" alt="">
+            </div>
+  
+            <div class="option">
+              <a href="#" data-i18n="navigation.machines">Máquinas</a>
+              <img class="icone" src="./assets/maquinas space.png" alt="">
+            </div>
+  
+            <div class="option">
+              <a href="#" data-i18n="navigation.logout">Sair</a>
+            </div>
+          </div>
+        </details>
+  
+        <div class="buttons">
+          <a onclick="closeMenu()" class="button openModalLogin">
+            <button data-i18n="navigation.login">Login</button>
           </a>
-          
-          <div class="menu">
-
-              <ul>
-                  <li><a onclick="closeMenu()" href="#home">Home</a></li>
-                  <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
-                  <li><a onclick="closeMenu()" href="#loja">Loja</a></li>
-                  <li><a onclick="closeMenu()" href="#faq">FAQ</a></li>
-              </ul>
-
-              <details id="cadastrado">
-                <summary class="summary">
-                  <img src="./assets/mini logo spacecloud.png" alt="">
-                  <h2>Nome do usuário</h2>
-                  <span class="arrow">&#9662;</span>
-                </summary>
-
-                <div class="options">
-                  <div class="option">
-                    <a href="#">Painel</a>
-                  </div>
-
-                  <div class="option">
-                    <a href="#">Configurações</a>
-                    <img class="icone" src="./assets/configuracoes space.png" alt="">
-                  </div>
-
-                  <div class="option">
-                    <a href="#">Notificações</a>
-                    <img class="icone" src="./assets/notificacoes space.png" alt="">
-                  </div>
-                  
-                  <div class="option">
-                    <a href="#">Faturas</a>
-                    <img class="icone" src="./assets/faturas space.png" alt="">
-                  </div>
-                  
-                  <div class="option">
-                    <a href="#">Carrinho</a>
-                    <img class="icone" src="./assets/carrinho space.png" alt="">
-                  </div>
-                  
-                  <div class="option">
-                    <a href="#">Máquinas</a>
-                    <img class="icone" src="./assets/maquinas space.png" alt="">
-                  </div>
-
-                  <div class="option">
-                    <a href="#">Sair</a>
-                  </div>
-                </div>
-              </details>  
-
-              <div class="buttons">
-                <a onclick="closeMenu()" class="button openModalLogin">
-                  <button>
-                    Login
-                  </button>
-                </a>
-
-                <a onclick="closeMenu()" class="button" href="./registro/index.html">
-                  <button>
-                    Registrar
-                  </button>
-                </a>
-              </div>
-
-           </div>
-
-          <button 
-          aria-expanded="false"
-          aria-label="Abrir menu"
-          onclick="openMenu()" 
-          class="open-menu">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg> 
-          </button>
-          <button
-          aria-expanded="true"
-          aria-label="Fechar menu"
-          onclick="closeMenu()" 
-          class="close-menu">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>                        
-          </button>
-
-      </div>       
-    </nav>
+  
+          <a onclick="closeMenu()" class="button" href="./registro/index.html">
+            <button data-i18n="navigation.register">Registrar</button>
+          </a>
+        </div>
+  
+      </div>
+  
+      <button 
+        aria-expanded="false"
+        aria-label="Abrir menu"
+        onclick="openMenu()" 
+        class="open-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M10 12H30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M18 28L30 28" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg> 
+      </button>
+      <button
+        aria-expanded="true"
+        aria-label="Fechar menu"
+        onclick="closeMenu()" 
+        class="close-menu">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>                        
+      </button>
+  
+    </div>       
+  </nav>
+  
 
    <!-- Sections -->
     <header class="header" id="home">
-        <div class="wrapper">
-           <div class="content">
-              <div class="text">
-                <span class="span" data-aos="fade-down"
-                data-aos-duration="1500">SPACE CLOUD</span>
-                <h1 data-aos="fade-up"
-                data-aos-anchor-placement="top-center">Alto desempenho em jogos e trabalhos</h1>
-                <p data-aos="fade-up"
-                data-aos-duration="1500">O Melhor da Space Cloud, em qualquer lugar!</p>
-                <a data-aos="fade-up"
-                data-aos-duration="2000" href="#"><button>ASSINAR AGORA</button></a>
-                
-              </div>
-           </div>
+    <div class="wrapper">
 
-          <div class="card">
-            <img src="./assets/icons/baixa.png" alt="">
-            <h3>Baixa Latência</h3>
-          </div>
-
-          <div class="card">
-            <img src="./assets/icons/suporte.png" alt="">
-            <h3>Suporte 24/7</h3>
-          </div>
-
-          <div class="card">
-            <img src="./assets/icons/seguranca.png" alt="">
-            <h3>Segurança Avançada</h3>
-          </div>
-
-          <div class="card">
-            <img src="./assets/icons/upgrade.png" alt="">
-            <h3>Upgrade Fácil</h3>
-          </div>
-
-          <div class="card">
-            <img src="./assets/icons/escabilidade.png" alt="">
-            <h3>Escalabilidade</h3>
-          </div>
-
-          <div class="card">
-            <img src="./assets/icons/backup.png" alt="">
-            <h3>Backups Automáticos</h3>
-          </div>
-
-          <div class="card">
-            <img src="./assets/icons/rede global.png" alt="">
-            <h3>Rede Global</h3>
-          </div>
-
-          <div class="card">
-            <img src="./assets/icons/escabilidade.png" alt="">
-            <h3>Estabilidade</h3>
-          </div>
-
-          <div class="card">
-            <img src="./assets/icons/conexao.png" alt="">
-            <h3>Conexão Rápida</h3>
-          </div>
-           
+      <div class="content">
+        <div class="text">
+          <!-- Adicionando atributos data-i18n -->
+          <span class="span" data-aos="fade-down" data-aos-duration="1500" data-i18n="header.span">SPACE CLOUD</span>
+          <h1 data-aos="fade-up" data-aos-anchor-placement="top-center" data-i18n="header.h1">Alto desempenho em jogos e trabalhos</h1>
+          <p data-aos="fade-up" data-aos-duration="1500" data-i18n="header.p">O Melhor da Space Cloud, em qualquer lugar!</p>
+          <a data-aos="fade-up" data-aos-duration="2000" href="#"><button data-i18n="header.button">ASSINAR AGORA</button></a>
         </div>
-        
-        <img class="bg-waves" src="./assets/bg spacecloud o (2).png" alt="">
-        <img class="blur" src="./assets/blur spacecloud.png" alt="">
+      </div>
+  
+      <!-- Cartões com as características -->
+      <div class="card">
+        <img src="./assets/icons/baixa.png" alt="">
+        <h3 data-i18n="features.lowLatency">Baixa Latência</h3>
+      </div>
+  
+      <div class="card">
+        <img src="./assets/icons/suporte.png" alt="">
+        <h3 data-i18n="features.support">Suporte 24/7</h3>
+      </div>
+  
+      <div class="card">
+        <img src="./assets/icons/seguranca.png" alt="">
+        <h3 data-i18n="features.security">Segurança Avançada</h3>
+      </div>
+  
+      <div class="card">
+        <img src="./assets/icons/upgrade.png" alt="">
+        <h3 data-i18n="features.upgrade">Upgrade Fácil</h3>
+      </div>
+  
+      <div class="card">
+        <img src="./assets/icons/escabilidade.png" alt="">
+        <h3 data-i18n="features.scalability">Escalabilidade</h3>
+      </div>
+  
+      <div class="card">
+        <img src="./assets/icons/backup.png" alt="">
+        <h3 data-i18n="features.backup">Backups Automáticos</h3>
+      </div>
+  
+      <div class="card">
+        <img src="./assets/icons/rede global.png" alt="">
+        <h3 data-i18n="features.globalNetwork">Rede Global</h3>
+      </div>
+  
+      <div class="card">
+        <img src="./assets/icons/escabilidade.png" alt="">
+        <h3 data-i18n="features.stability">Estabilidade</h3>
+      </div>
+  
+      <div class="card">
+        <img src="./assets/icons/conexao.png" alt="">
+        <h3 data-i18n="features.fastConnection">Conexão Rápida</h3>
+      </div>
+    </div>
+  
+    <img class="bg-waves" src="./assets/bg spacecloud o (2).png" alt="">
+    <img class="blur" src="./assets/blur spacecloud.png" alt="">
     </header>
 
     <section id="services">
       <div class="wrapper">
         <div class="content">
           <header data-aos="fade-up">
-            <span class="span">SERVIÇOS</span>
-            <h2>Como podemos te ajudar?</h2>
+            <span class="span" data-i18n="services.title">SERVIÇOS</span>
+            <h2 data-i18n="services.subtitle">Como podemos te ajudar?</h2>
           </header>
-
+    
           <div class="cards">
             <div data-aos="fade-up-right" class="card">
               <img src="./assets/SUPORTE.png" alt="">
-              <h3>Suporte ao cliente</h3>
-              <p>Nossos suportes estão aqui para resolver <span>todas as suas necessidades</span> e garantir uma <span>boa experiência</span>.</p>
+              <h3 data-i18n="services.card1.title">Suporte ao cliente</h3>
+              <p data-i18n="services.card1.description">Nossos suportes estão aqui para resolver todas as suas necessidades e garantir uma boa experiência.</p>
             </div>
-
+    
             <div data-aos="fade-up" class="card">
               <img src="./assets/PERFORMANCE.png" alt="">
-              <h3>Alta performance</h3>
-              <p>As <span>melhores máquinas</span> com poder de processamento e velocidade <span>como você nunca viu</span>.</p>
+              <h3 data-i18n="services.card2.title">Alta performance</h3>
+              <p data-i18n="services.card2.description">As melhores máquinas com poder de processamento e velocidade como você nunca viu.</p>
             </div>
-
+    
             <div data-aos="fade-up-left" class="card">
               <img src="./assets/PLANOS.png" alt="">
-              <h3>Planos variados</h3>
-              <p>Opções variadas do <span>recomendado ao ideal</span> para escolher de acordo com <span>suas necessidades</span>.</p>
+              <h3 data-i18n="services.card3.title">Planos variados</h3>
+              <p data-i18n="services.card3.description">Opções variadas do recomendado ao ideal para escolher de acordo com suas necessidades.</p>
             </div>
           </div>
-
-          <a data-aos="fade-up" href="#"><button>ASSINAR AGORA!</button></a>
+    
+          <a data-aos="fade-up" href="#"><button data-i18n="services.button">ASSINAR AGORA!</button></a>
         </div>
       </div>
-    </section>
+    </section>    
 
     <section id="video">
       <div class="wrapper">
         <div class="content">
           <header data-aos="fade-up">
-            <span class="span">SAIBA MAIS</span>
-            <h2>Space Cloud, esse é seu futuro!</h2>
+            <span class="span" data-i18n="video.title">SAIBA MAIS</span>
+            <h2 data-i18n="video.subtitle">Space Cloud, esse é seu futuro!</h2>
           </header>
-
+    
           <div data-aos="flip-up" class="div-video">
-            <div id="vid_671035a011c4d7000b0031bf" style="position:relative;width:100%;padding: 56.25% 0 0;"> <img id="thumb_671035a011c4d7000b0031bf" src="https://images.converteai.net/cd6c4cd6-e61e-475d-acc7-3675ee04bae8/players/671035a011c4d7000b0031bf/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"> <div id="backdrop_671035a011c4d7000b0031bf" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div> </div> <script type="text/javascript" id="scr_671035a011c4d7000b0031bf"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/cd6c4cd6-e61e-475d-acc7-3675ee04bae8/players/671035a011c4d7000b0031bf/player.js", s.async=!0,document.head.appendChild(s); </script>
+            <div id="vid_671035a011c4d7000b0031bf" style="position:relative;width:100%;padding: 56.25% 0 0;"> 
+              <img id="thumb_671035a011c4d7000b0031bf" src="https://images.converteai.net/cd6c4cd6-e61e-475d-acc7-3675ee04bae8/players/671035a011c4d7000b0031bf/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;">
+              <div id="backdrop_671035a011c4d7000b0031bf" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div>
+            </div>
+            <script type="text/javascript" id="scr_671035a011c4d7000b0031bf">
+              var s=document.createElement("script");
+              s.src="https://scripts.converteai.net/cd6c4cd6-e61e-475d-acc7-3675ee04bae8/players/671035a011c4d7000b0031bf/player.js", s.async=!0,document.head.appendChild(s);
+            </script>
           </div>
-
-          <a data-aos="fade-up" href="#"><button>COMEÇAR AGORA!</button></a>
+    
+          <a data-aos="fade-up" href="#"><button data-i18n="video.button">COMEÇAR AGORA!</button></a>
         </div>
       </div>
-
+    
       <img class="lines" src="./assets/lines spacecloud.png" alt="">
-    </section>
+    </section>    
 
     <section id="computacao">
       <div class="wrapper">
         <div class="content">
           <div data-aos="fade-up-right" class="text">
-            <h2>Computação <span>em nuvem</span></h2>
-            <p>Descubra o melhor da nuvem com maquinas para jogos e trabalhos onde estiver e quando quiser.</p>
+            <h2 data-i18n="computacao.title">Computação em nuvem</h2>
+            <p data-i18n="computacao.description">Descubra o melhor da nuvem com maquinas para jogos e trabalhos onde estiver e quando quiser.</p>
             <div class="numbers">
               <div class="number">
                 <h3>135K<span>+</span></h3>
-                <h4>Usuários Ativos</h4>
+                <h4 data-i18n="computacao.activeUsers">Usuários Ativos</h4>
               </div>
             </div>
-            <a href="#"><button>ASSINAR AGORA</button></a>
+            <a href="#"><button data-i18n="computacao.button">ASSINAR AGORA</button></a>
           </div>
-
+    
           <div data-aos="fade-up-left" class="image">
             <img src="./assets/Computacao em Nuvem.png" alt="">
           </div>
         </div>
       </div>
-    </section>
+    </section>    
 
     <section id="acessibilidade">
       <div class="wrapper">
@@ -409,389 +423,459 @@
           </div>
           
           <div data-aos="fade-right" class="text">
-            <h2>Acessibilidade</h2>
-            <p>Experimente nossos serviços em diversas plataformas, estamos prontos para entregar o melhor em qualquer lugar.</p>
-            <a href="#"><button>ASSINAR AGORA</button></a>
+            <h2 data-i18n="acessibilidade.title">Acessibilidade</h2>
+            <p data-i18n="acessibilidade.description">Experimente nossos serviços em diversas plataformas, estamos prontos para entregar o melhor em qualquer lugar.</p>
+            <a href="#"><button data-i18n="acessibilidade.button">ASSINAR AGORA</button></a>
           </div>
         </div>
       </div>
-
+    
       <img class="lines" src="./assets/lines plano spacecloud.png" alt="">
-    </section>
+    </section>    
 
     <section id="depoimentos">
       <div class="wrapper">
         <div class="content">
           <header data-aos="fade-up">
-            <span class="span">DEPOIMENTOS</span>
-            <h2>O que nossos <span>clientes</span> dizem?</h2>
-            <p>Confira alguns comentários feitos por clientes após alguns dias aproveitando os nossos serviços. </p>
+            <span class="span" data-i18n="depoimentos.title">DEPOIMENTOS</span>
+            <h2 data-i18n="depoimentos.subtitle">O que nossos clientes dizem?</h2>
+            <p data-i18n="depoimentos.description">Confira alguns comentários feitos por clientes após alguns dias aproveitando os nossos serviços.</p>
           </header>
-
+    
           <div data-aos="fade-up" class="swiper mySwiper3">
             <div class="cards swiper-wrapper">
               <div class="card swiper-slide">
                 <img src="./assets/icone citacao.png" alt="">
-                <p>“O serviço é muito bom, 100% de confiança, a entrega do produto é bem rápida e as máquinas são ótimas, recomendo um plano de 6 núcleos ou acima se você quiser uma boa experiência nos games, comecei com o plano de 6 núcleos, mas não rodava bem meus games, então fiz upgrade para 8 núcleos e supriu bem minhas necessidades.”</p>
+                <p data-i18n="depoimentos.client1.quote">“O serviço é muito bom, 100% de confiança, a entrega do produto é bem rápida e as máquinas são ótimas, recomendo um plano de 6 núcleos ou acima se você quiser uma boa experiência nos games, comecei com o plano de 6 núcleos, mas não rodava bem meus games, então fiz upgrade para 8 núcleos e supriu bem minhas necessidades.”</p>
                 <div class="stars">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
                 </div>
-  
-                <h3>DaniFull, cliente</h3>
+                <h3 data-i18n="depoimentos.client1.name">DaniFull, cliente</h3>
               </div>
-  
+    
               <div class="card swiper-slide">
                 <img src="./assets/icone citacao.png" alt="">
-                <p>“Quis fazer uma prova de fogo com a máquina, peguei Nier Automata que tem fama de ser mal otimizado para PC e ainda enchi de mod gráfico, coloquei reshade e texturas em HD e assim o jogo já teria explodido meu pc se não fosse pela Space Cloud. Já to alegre por poder jogar pela quarta vez esse jogo maravilhoso, obrigado pessoal.”</p>
+                <p data-i18n="depoimentos.client2.quote">“Quis fazer uma prova de fogo com a máquina, peguei Nier Automata que tem fama de ser mal otimizado para PC e ainda enchi de mod gráfico, coloquei reshade e texturas em HD e assim o jogo já teria explodido meu pc se não fosse pela Space Cloud. Já to alegre por poder jogar pela quarta vez esse jogo maravilhoso, obrigado pessoal.”</p>
                 <div class="stars">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
                 </div>
-  
-                <h3>Justice, cliente.</h3>
+                <h3 data-i18n="depoimentos.client2.name">Justice, cliente.</h3>
               </div>
-  
+    
               <div class="card swiper-slide">
                 <img src="./assets/icone citacao.png" alt="">
-                <p>”Para os que perguntam se vale a pena, eu posso dizer com toda certeza que sim, máquinas com potência altíssima, desde do plano mais básico até o melhor, e o melhor de tudo é o salvamento de arquivos, que já coloca a Space Cloud a frente de muitos clouds, no suporte e atendimento ajudam e resolvem seu problema rápido.”</p>
+                <p data-i18n="depoimentos.client3.quote">”Para os que perguntam se vale a pena, eu posso dizer com toda certeza que sim, máquinas com potência altíssima, desde do plano mais básico até o melhor, e o melhor de tudo é o salvamento de arquivos, que já coloca a Space Cloud a frente de muitos clouds, no suporte e atendimento ajudam e resolvem seu problema rápido.”</p>
                 <div class="stars">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
                 </div>
-  
-                <h3>Yuri, cliente.</h3>
+                <h3 data-i18n="depoimentos.client3.name">Yuri, cliente.</h3>
               </div>
-  
+    
               <div class="card swiper-slide">
                 <img src="./assets/icone citacao.png" alt="">
-                <p>“É a melhor VM que já usei, ganha de outras clouds por coisas como não ter fila de login, salvar os arquivos e ter um acesso quase instantâneo, comprei o plano de 4 núcleos e de todos os jogos que testei o mais pesado foi o Warzone, com um desempenho ótimo e 0 delay, também tirou de letra no emulador de PS2.”</p>
+                <p data-i18n="depoimentos.client4.quote">“É a melhor VM que já usei, ganha de outras clouds por coisas como não ter fila de login, salvar os arquivos e ter um acesso quase instantâneo, comprei o plano de 4 núcleos e de todos os jogos que testei o mais pesado foi o Warzone, com um desempenho ótimo e 0 delay, também tirou de letra no emulador de PS2.”</p>
                 <div class="stars">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
                 </div>
-  
-                <h3>Felps, cliente.</h3>
+                <h3 data-i18n="depoimentos.client4.name">Felps, cliente.</h3>
               </div>
-  
+    
               <div class="card swiper-slide">
                 <img src="./assets/icone citacao.png" alt="">
-                <p>“Peço perdão pelas vezes em que critiquei o sistema de vocês, a verdade é que eu jogo um jogo pesado de mais até para máquinas de última geração, todos os streamings que já tentei usar não aguentaram, mas a máquina de 16 núcleos de vocês é surreal, mesmo com HD e não SSD, supera outras clouds com certeza, pc top demais.”</p>
+                <p data-i18n="depoimentos.client5.quote">“Peço perdão pelas vezes em que critiquei o sistema de vocês, a verdade é que eu jogo um jogo pesado de mais até para máquinas de última geração, todos os streamings que já tentei usar não aguentaram, mas a máquina de 16 núcleos de vocês é surreal, mesmo com HD e não SSD, supera outras clouds com certeza, pc top demais.”</p>
                 <div class="stars">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
                 </div>
-  
-                <h3>Dilann, cliente.</h3>
+                <h3 data-i18n="depoimentos.client5.name">Dilann, cliente.</h3>
               </div>
-  
+    
               <div class="card swiper-slide">
                 <img src="./assets/icone citacao.png" alt="">
-                <p>“Após um mês de uso estou impressionado com os serviços da Space, atendimento simplesmente incrível, os caras realmente tentam resolver os problemas e são rápidos com isso, realmente um bom investimento considerando o preço dos hardwares atualmente, com uma jogabilidade incrível, sem lags e com boa qualidade.”</p>
+                <p data-i18n="depoimentos.client6.quote">“Após um mês de uso estou impressionado com os serviços da Space, atendimento simplesmente incrível, os caras realmente tentam resolver os problemas e são rápidos com isso, realmente um bom investimento considerando o preço dos hardwares atualmente, com uma jogabilidade incrível, sem lags e com boa qualidade.”</p>
                 <div class="stars">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
                 </div>
-  
-                <h3>Verstappen, cliente.</h3>
+                <h3 data-i18n="depoimentos.client6.name">Verstappen, cliente.</h3>
               </div>
-  
+    
               <div class="card swiper-slide">
                 <img src="./assets/icone citacao.png" alt="">
-                <p>“os caras continuam incríveis no suporte, minha experiência nos games é só sucesso, esse feedback é mais pela comunidade e o serviço dos caras lá dentro, para quem é leigo como eu os caras ajudam bastante a entender tudo, parabéns pela equipe que vocês têm hoje, minha experiência com a Space é totalmente satisfatória.”</p>
+                <p data-i18n="depoimentos.client7.quote">“os caras continuam incríveis no suporte, minha experiência nos games é só sucesso, esse feedback é mais pela comunidade e o serviço dos caras lá dentro, para quem é leigo como eu os caras ajudam bastante a entender tudo, parabéns pela equipe que vocês têm hoje, minha experiência com a Space é totalmente satisfatória.”</p>
                 <div class="stars">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
-                    <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
+                  <img src="./assets/star.svg" alt="">
                 </div>
-  
-                <h3>Menossi, cliente.</h3>
+                <h3 data-i18n="depoimentos.client7.name">Menossi, cliente.</h3>
               </div>
             </div>
-
+    
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
           </div>
-          
         </div>
       </div>
-    </section>
+    </section>    
 
     <section id="identificacao">
       <div class="wrapper">
         <div class="content">
           <header>
-            <span class="span">SPACE CLOUD PRA VOCÊ</span>
-            <h2>A <span>Space Cloud</span> é pra você que é:</h2>
+            <span class="span" data-i18n="identificacao.title">SPACE CLOUD PRA VOCÊ</span>
+            <h2 data-i18n="identificacao.subtitle">A Space Cloud é pra você que é:</h2>
           </header>
-
+    
           <div class="cards">
             <div class="card">
               <img class="bg" src="./assets/gamer.webp" alt="">
-              <h3>Gamer</h3>
-              <p>Desfrute de uma experiência de jogo <span>sem travamentos e com desempenho máximo</span>, rodando os jogos mais pesados em <span>qualidade ultra</span>, sem se preocupar com a sua máquina local.</p>
+              <h3 data-i18n="identificacao.card1.title">Gamer</h3>
+              <p data-i18n="identificacao.card1.description">Desfrute de uma experiência de jogo sem travamentos e com desempenho máximo, rodando os jogos mais pesados em qualidade ultra, sem se preocupar com a sua máquina local.</p>
             </div>
-
+    
             <div class="card">
               <img class="bg" src="./assets/desenvolvedor.webp" alt="">
-              <h3>Desenvolvedor</h3>
-              <p>Tenha acesso a máquinas robustas, ideais para <span>compilar projetos complexos</span>, rodar ambientes virtuais pesados ou testar suas aplicações <span>com velocidade e eficiência</span>.</p>
+              <h3 data-i18n="identificacao.card2.title">Desenvolvedor</h3>
+              <p data-i18n="identificacao.card2.description">Tenha acesso a máquinas robustas, ideais para compilar projetos complexos, rodar ambientes virtuais pesados ou testar suas aplicações com velocidade e eficiência.</p>
             </div>
-
+    
             <div class="card">
               <img class="bg" src="./assets/designer.webp" alt="">
-              <h3>Designer/Editor</h3>
-              <p>Renderize vídeos e trabalhe com gráficos pesados <span>sem atrasos</span>, aproveitando o poder de uma máquina feita para lidar com <span>grandes demandas de software criativo</span>.</p>
+              <h3 data-i18n="identificacao.card3.title">Designer/Editor</h3>
+              <p data-i18n="identificacao.card3.description">Renderize vídeos e trabalhe com gráficos pesados sem atrasos, aproveitando o poder de uma máquina feita para lidar com grandes demandas de software criativo.</p>
             </div>
-
+    
             <div class="card">
               <img class="bg" src="./assets/data science.webp" alt="">
-              <h3>Data Science</h3>
-              <p>Execute análises de dados massivas, treine modelos de IA e realize simulações complexas com os <span>recursos avançados das nossas máquinas</span> em nuvem.</p>
+              <h3 data-i18n="identificacao.card4.title">Data Science</h3>
+              <p data-i18n="identificacao.card4.description">Execute análises de dados massivas, treine modelos de IA e realize simulações complexas com os recursos avançados das nossas máquinas em nuvem.</p>
             </div>
-
+    
             <div class="card">
               <img class="bg" src="./assets/streamer.webp" alt="">
-              <h3>Streamer</h3>
-              <p>Transmita ao vivo com <span>qualidade de ponta</span>, sem sobrecarregar seu PC local, aproveitando o <span>processamento poderoso da Space Cloud</span> para garantir uma experiência de streaming <span>fluida</span>.</p>
+              <h3 data-i18n="identificacao.card5.title">Streamer</h3>
+              <p data-i18n="identificacao.card5.description">Transmita ao vivo com qualidade de ponta, sem sobrecarregar seu PC local, aproveitando o processamento poderoso da Space Cloud para garantir uma experiência de streaming fluida.</p>
             </div>
-
+    
             <div class="card">
               <img class="bg" src="./assets/empreendedor.webp" alt="">
-              <h3>Empreendedor</h3>
-              <p>Gerencie e escale seu negócio com <span>total flexibilidade</span>, com máquinas que se adaptam ao seu fluxo de trabalho e garantem <span>alta performance para suas demandas</span> de TI.</p>
+              <h3 data-i18n="identificacao.card6.title">Empreendedor</h3>
+              <p data-i18n="identificacao.card6.description">Gerencie e escale seu negócio com total flexibilidade, com máquinas que se adaptam ao seu fluxo de trabalho e garantem alta performance para suas demandas de TI.</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section>    
 
     <section id="loja">
       <div class="wrapper">
         <div class="content">
           <header data-aos="fade-up">
-            <span class="span">LOJA</span>
-            <h2>Planos e Assinaturas</h2>
+            <span class="span" data-i18n="loja.titulo">LOJA</span>
+            <h2 data-i18n="loja.subtitulo">Planos e Assinaturas</h2>
           </header>
-
+    
           <div class="cards">
             <div data-aos="fade-up-right" data-aos-duration="2000" class="border">
               <div class="card">
-                <span>GOOGLE BÁSICO</span>
-                <h3>R$79,00<span>/Mês</span></h3>
-                
-                <div class="topics">
-                  <p><img src="./assets/sem fila.png" alt=""> Sem fila</p>
-                  <p><img src="./assets/arquivo.png" alt=""> Salva Arquivos</p>
-                  <p><img src="./assets/placadevideo.png" alt=""> NVidia Tesla T4</p>
-                  <p><img src="./assets/nucleo.png" alt=""> 6 Núcleos</p>
-                  <p><img src="./assets/ram.png" alt=""> 16GB RAM</p>
-                  <p><img src="./assets/spot.png" alt=""> Contém spot</p>
+                <span data-i18n="loja.planos.basico">GOOGLE BÁSICO</span>
+                <div class="price">
+                  <h3>R$79,00</h3>
+                  <span>/Mês</span>
                 </div>
-  
-                <a href="#"><button>ASSINAR AGORA</button></a>
+    
+                <div class="topics">
+                  <div class="topic">
+                    <img src="./assets/sem fila.png" alt="">
+                    <p data-i18n="loja.atributos.semfila">Sem fila</p>
+                  </div>
+    
+                  <div class="topic">
+                    <img src="./assets/arquivo.png" alt="">
+                    <p data-i18n="loja.atributos.salvaArquivos">Salva Arquivos</p>
+                  </div>
+    
+                  <div class="topic">
+                    <img src="./assets/placadevideo.png" alt="">
+                    <p data-i18n="loja.atributos.gpu">NVidia Tesla T4</p>
+                  </div>
+    
+                  <div class="topic">
+                    <img src="./assets/nucleo.png" alt="">
+                    <p data-i18n="loja.atributos.nucleos6">6 Núcleos</p>
+                  </div>
+    
+                  <div class="topic">
+                    <img src="./assets/ram.png" alt="">
+                    <p data-i18n="loja.atributos.ram16">16GB RAM</p>
+                  </div>
+    
+                  <div class="topic">
+                    <img src="./assets/spot.png" alt="">
+                    <p data-i18n="loja.atributos.contaSpot">Contém spot</p>
+                  </div>
+                </div>
+    
+                <a href="#"><button data-i18n="loja.botao.assinar">ASSINAR AGORA</button></a>
               </div>
             </div>
-
+    
             <div data-aos="fade-up" class="border-card">
               <div class="card recomendado">
-                <span>GOOGLE MÉDIO</span>
-                <h3>R$97,90<span>/Mês</span></h3>
-                
-                <div class="topics">
-                  <p><img src="./assets/sem fila.png" alt=""> Sem fila</p>
-                  <p><img src="./assets/arquivo.png" alt=""> Salva Arquivos</p>
-                  <p><img src="./assets/placadevideo.png" alt=""> NVidia Tesla T4</p>
-                  <p><img src="./assets/nucleo.png" alt=""> 8 Núcleos</p>
-                  <p><img src="./assets/ram.png" alt=""> 22GB RAM</p>
-                  <p><img src="./assets/spot.png" alt=""> Contém spot</p>
+                <span data-i18n="loja.planos.medio">GOOGLE MÉDIO</span>
+                <div class="price">
+                  <h3>R$97,90</h3>
+                  <span>/Mês</span>
                 </div>
-  
-                <a href="#"><button>ASSINAR AGORA</button></a>
+    
+                <div class="topics">
+                  <div class="topic">
+                    <img src="./assets/sem fila.png" alt="">
+                    <p data-i18n="loja.atributos.semfila">Sem fila</p>
+                  </div>
+    
+                  <div class="topic">
+                    <img src="./assets/arquivo.png" alt="">
+                    <p data-i18n="loja.atributos.salvaArquivos">Salva Arquivos</p>
+                  </div>
+    
+                  <div class="topic">
+                    <img src="./assets/placadevideo.png" alt="">
+                    <p data-i18n="loja.atributos.gpu">NVidia Tesla T4</p>
+                  </div>
+    
+                  <div class="topic">
+                    <img src="./assets/nucleo.png" alt="">
+                    <p data-i18n="loja.atributos.nucleos8">8 Núcleos</p>
+                  </div>
+    
+                  <div class="topic">
+                    <img src="./assets/ram.png" alt="">
+                    <p data-i18n="loja.atributos.ram22">22GB RAM</p>
+                  </div>
+    
+                  <div class="topic">
+                    <img src="./assets/spot.png" alt="">
+                    <p data-i18n="loja.atributos.contaSpot">Contém spot</p>
+                  </div>
+                </div>
+    
+                <a href="#"><button data-i18n="loja.botao.assinar">ASSINAR AGORA</button></a>
               </div>
             </div>
-
+    
             <div data-aos="fade-up-left" data-aos-duration="2000" class="border">
               <div class="card">
-                <span>GOOGLE PRO</span>
-                <h3>R$149,90<span>/Mês</span></h3>
-                
-                <div class="topics">
-                  <p><img src="./assets/sem fila.png" alt=""> Sem fila</p>
-                  <p><img src="./assets/arquivo.png" alt=""> Salva Arquivos</p>
-                  <p><img src="./assets/placadevideo.png" alt=""> NVidia Tesla T4</p>
-                  <p><img src="./assets/nucleo.png" alt=""> 16 Núcleos</p>
-                  <p><img src="./assets/ram.png" alt=""> 32GB RAM</p>
-                  <p><img src="./assets/spot.png" alt=""> Contém spot</p>
+                <span data-i18n="loja.planos.pro">GOOGLE PRO</span>
+                <div class="price">
+                  <h3>R$149,90</h3>
+                  <span>/Mês</span>
                 </div>
-  
-                <a href="#"><button>ASSINAR AGORA</button></a>
+    
+                <div class="topics">
+                  <div class="topic">
+                    <img src="./assets/sem fila.png" alt="">
+                    <p data-i18n="loja.atributos.semfila">Sem fila</p>
+                  </div>
+    
+                  <div class="topic">
+                    <img src="./assets/arquivo.png" alt="">
+                    <p data-i18n="loja.atributos.salvaArquivos">Salva Arquivos</p>
+                  </div>
+    
+                  <div class="topic">
+                    <img src="./assets/placadevideo.png" alt="">
+                    <p data-i18n="loja.atributos.gpu">NVidia Tesla T4</p>
+                  </div>
+    
+                  <div class="topic">
+                    <img src="./assets/nucleo.png" alt="">
+                    <p data-i18n="loja.atributos.nucleos16">16 Núcleos</p>
+                  </div>
+    
+                  <div class="topic">
+                    <img src="./assets/ram.png" alt="">
+                    <p data-i18n="loja.atributos.ram32">32GB RAM</p>
+                  </div>
+    
+                  <div class="topic">
+                    <img src="./assets/spot.png" alt="">
+                    <p data-i18n="loja.atributos.contaSpot">Contém spot</p>
+                  </div>
+                </div>
+    
+                <a href="#"><button data-i18n="loja.botao.assinar">ASSINAR AGORA</button></a>
               </div>
             </div>
           </div>
-
-          <a href="./planos/index.html"><button>Veja todos os planos</button></a>
+    
+          <a href="./planos/index.html"><button data-i18n="loja.botao.verTodos">Veja todos os planos</button></a>
         </div>
       </div>
-
+    
       <img class="lines" src="./assets/lines plano spacecloud.png" alt="">
-    </section>
+    </section>    
 
     <section id="faq">
       <div class="wrapper">
         <div class="content">
           <header data-aos="fade-up">
-            <span class="span">FAQ</span>
-            <h2>Dúvidas Frequentes</h2>
+            <span class="span" data-i18n="faq.span">FAQ</span>
+            <h2 data-i18n="faq.title">Dúvidas Frequentes</h2>
           </header>
-
+    
           <div class="faq">
             <details data-aos="fade-up-left">
-            <summary>
-                O que é um "PC na nuvem"?
+              <summary>
+                <span data-i18n="faq.question1">O que é um "PC na nuvem"?</span>
                 <ion-icon name="close-outline"></ion-icon>
-            </summary>
-                <p>Um computador em nuvem é uma máquina virtual, acessada remotamente pelo seu dispositivo, sem limitações de região, oferecendo acessibilidade e conforto, com todos os serviços e funcionalidades de um computador normal, mas sem a necessidade de ter em mãos o produto físico.</p>
+              </summary>
+              <p data-i18n="faq.answer1">Um computador em nuvem é uma máquina virtual, acessada remotamente pelo seu dispositivo, sem limitações de região, oferecendo acessibilidade e conforto, com todos os serviços e funcionalidades de um computador normal, mas sem a necessidade de ter em mãos o produto físico.</p>
             </details>
-
+    
             <details data-aos="fade-up-right">
               <summary>
-                  Posso atualizar o sistema?
-                  <ion-icon name="close-outline"></ion-icon>
+                <span data-i18n="faq.question2">Posso atualizar o sistema?</span>
+                <ion-icon name="close-outline"></ion-icon>
               </summary>
-                  <p>Não, todos os componentes do sistema incluindo os drivers, foram pensados para o melhor desempenho da sua máquina, alterar essas configurações pode diminuir a performance e até quebrar a máquina, além disso é considerado uso indevido dos nossos serviços.</p>
+              <p data-i18n="faq.answer2">Não, todos os componentes do sistema incluindo os drivers, foram pensados para o melhor desempenho da sua máquina, alterar essas configurações pode diminuir a performance e até quebrar a máquina, além disso é considerado uso indevido dos nossos serviços.</p>
             </details>
-
+    
             <details data-aos="fade-up-left">
               <summary>
-                  Como isso funciona?
-                  <ion-icon name="close-outline"></ion-icon>
+                <span data-i18n="faq.question3">Como isso funciona?</span>
+                <ion-icon name="close-outline"></ion-icon>
               </summary>
-                  <p>Nosso sistema permite que você conecte seu dispositivo diretamente a um computador em nosso servidor, esse computador é projetado para oferecer o melhor desempenho as suas atividades, como jogos, trabalhos e muito mais.</p>
+              <p data-i18n="faq.answer3">Nosso sistema permite que você conecte seu dispositivo diretamente a um computador em nosso servidor, esse computador é projetado para oferecer o melhor desempenho as suas atividades, como jogos, trabalhos e muito mais.</p>
             </details>
-
+    
             <details data-aos="fade-up-right">
               <summary>
-                  Funciona em Android e IOS?
-                  <ion-icon name="close-outline"></ion-icon>
+                <span data-i18n="faq.question4">Funciona em Android e IOS?</span>
+                <ion-icon name="close-outline"></ion-icon>
               </summary>
-                  <p>Sim, no Android o primeiro acesso pode ser feito pelo RDP ou VNC e partir para o uso com Moonlight ou Persec. Já no IOS o primeiro acesso também ocorre pelo Remote Desktop ou VNC, mas não é possível usar Moonlight e Parsec, o único aplicativo de streaming compatível para IOS é o Steam Link.</p>
+              <p data-i18n="faq.answer4">Sim, no Android o primeiro acesso pode ser feito pelo RDP ou VNC e partir para o uso com Moonlight ou Persec. Já no IOS o primeiro acesso também ocorre pelo Remote Desktop ou VNC, mas não é possível usar Moonlight e Parsec, o único aplicativo de streaming compatível para IOS é o Steam Link.</p>
             </details>
-
+    
             <details data-aos="fade-up-left">
               <summary>
-                  Posso jogar pelo RDP ou VNC?
-                  <ion-icon name="close-outline"></ion-icon>
+                <span data-i18n="faq.question5">Posso jogar pelo RDP ou VNC?</span>
+                <ion-icon name="close-outline"></ion-icon>
               </summary>
-                  <p>Não, o RDP (Remote Desktop Protocol) e VNC (Virtual Network Computing) são usados apenas para o primeiro acesso, permitindo vincular suas contas Parsec, Moonlight e Steam Link. Após vincular suas contas você deve fechar o RDP ou VNC e jogar exclusivamente pelo Persec, Moonlight ou Steam Link.</p>
+              <p data-i18n="faq.answer5">Não, o RDP (Remote Desktop Protocol) e VNC (Virtual Network Computing) são usados apenas para o primeiro acesso, permitindo vincular suas contas Parsec, Moonlight e Steam Link. Após vincular suas contas você deve fechar o RDP ou VNC e jogar exclusivamente pelo Persec, Moonlight ou Steam Link.</p>
             </details>
-
+    
             <details data-aos="fade-up-right">
               <summary>
-                  Por que usar um pc em nuvem?
-                  <ion-icon name="close-outline"></ion-icon>
+                <span data-i18n="faq.question6">Por que usar um pc em nuvem?</span>
+                <ion-icon name="close-outline"></ion-icon>
               </summary>
-                  <p>Os gastos para ter um computador como os da Space Cloud, físico em mãos, chegaria perto dos R$12.000, sem contar os gastos de manutenção que vão chegar com tempo de uso, por isso um computador na nuvem sai bem mais em conta.</p>
+              <p data-i18n="faq.answer6">Os gastos para ter um computador como os da Space Cloud, físico em mãos, chegaria perto dos R$12.000, sem contar os gastos de manutenção que vão chegar com tempo de uso, por isso um computador na nuvem sai bem mais em conta.</p>
             </details>
-
+    
             <details data-aos="fade-up-left">
               <summary>
-                  O que é instância Preemptiva?
-                  <ion-icon name="close-outline"></ion-icon>
+                <span data-i18n="faq.question7">O que é instância Preemptiva?</span>
+                <ion-icon name="close-outline"></ion-icon>
               </summary>
-                  <p>Instância Preemptivas de VM são uma variante mais em conta das VMs padrão, Isso por porque essas instâncias podem ser interrompidas pelo Compute Engine, Afim de recuperar a capacidade de computação para direciona-las para outras Vms.</p>
+              <p data-i18n="faq.answer7">Instância Preemptivas de VM são uma variante mais em conta das VMs padrão, Isso por porque essas instâncias podem ser interrompidas pelo Compute Engine, Afim de recuperar a capacidade de computação para direciona-las para outras Vms.</p>
             </details>
-
+    
             <details data-aos="fade-up-right">
               <summary>
-                  Eu perco meus arquivos ao desligar a máquina?
-                  <ion-icon name="close-outline"></ion-icon>
+                <span data-i18n="faq.question8">Eu perco meus arquivos ao desligar a máquina?</span>
+                <ion-icon name="close-outline"></ion-icon>
               </summary>
-                  <p>Não, nossos serviços incluem o salvamento dos seus arquivos de forma 100% segura, basta alocar esses arquivos e documentos em um dos hds da máquina, assim seus arquivos de jogos, documentos de trabalhos e projetos não são perdidos ao desligar ou reiniciar sua máquina.</p>
+              <p data-i18n="faq.answer8">Não, nossos serviços incluem o salvamento dos seus arquivos de forma 100% segura, basta alocar esses arquivos e documentos em um dos hds da máquina, assim seus arquivos de jogos, documentos de trabalhos e projetos não são perdidos ao desligar ou reiniciar sua máquina.</p>
             </details>
-
+    
             <details data-aos="fade-up-left">
               <summary>
-                  Existe algum sistema de fila de login?
-                  <ion-icon name="close-outline"></ion-icon>
+                <span data-i18n="faq.question9">Existe algum sistema de fila de login?</span>
+                <ion-icon name="close-outline"></ion-icon>
               </summary>
-                  <p>Não, para tornar a sua experiência mais confortável trabalhamos sem filas de espera, assim é possível acessar sua máquina quando e onde quiser sem tomar muito de seu tempo apenas para um login.</p>
+              <p data-i18n="faq.answer9">Não, para tornar a sua experiência mais confortável trabalhamos sem filas de espera, assim é possível acessar sua máquina quando e onde quiser sem tomar muito de seu tempo apenas para um login.</p>
             </details>
-        </div>
+          </div>
         </div>
       </div>
-    </section>
+    </section>    
 
     <section id="duvida">
       <img class="lines" src="./assets/lines plano spacecloud.png" alt="">
-
+    
       <div class="wrapper">
         <div class="content">
           <div class="image" data-aos="fade-left">
             <img src="./assets/duvida img.png" alt="">
           </div>
-
+    
           <div class="text" data-aos="fade-right">
-            <h2>Está com alguma <span>dúvida</span> e quer saber mais?</h2>
-            <p>Entre em contato com a equipe de suporte e retornaremos em até 24 horas.</p>
-            <a href="#"><button>SUPORTE</button></a>
+            <h2 data-i18n="support.title">Está com alguma dúvida e quer saber mais?</h2>
+            <p data-i18n="support.message">Entre em contato com a equipe de suporte e retornaremos em até 24 horas.</p>
+            <a href="#"><button data-i18n="support.button">SUPORTE</button></a>
           </div>
         </div>
       </div>
-    </section>
+    </section>    
 
     <footer id="footer">
       <div class="wrapper">
-          <div class="content">
-              <img class="logo" src="./assets/logo spacecloud.svg" alt="">
-
-              <div class="navigation">
-                  <h3>Menu</h3>
-                  <p><a href="#home">Home</a></p>
-                  <p><a href="#aprender">Loja</a></p>
-                  <p><a href="#depoimentos">FAQ</a></p>
-                  <p><a href="#plano">Social</a></p>
-              </div>
-  
-              <div class="contato">
-                  <h3>Links</h3>
-                  <a href=""><p>Termos de uso</p></a>
-                  <a href=""><p>Política de Privacidade</p></a>
-                  <a href=""><p>Política de Cookies</p></a>
-              </div>
-  
-              <div class="redes-sociais">
-                  <h3>Social</h3>
-                  <div class="icons">
-                      <a target="_blank" href="https://www.instagram.com/spacecloud.gg/"><ion-icon name="logo-instagram"></ion-icon></a>
-                  </div>
-              </div>
+        <div class="content">
+          <img class="logo" src="./assets/logo spacecloud.svg" alt="">
+    
+          <div class="navigation">
+            <h3 data-i18n="footer.menu">Menu</h3>
+            <p><a href="#home" data-i18n="footer.home">Home</a></p>
+            <p><a href="#aprender" data-i18n="footer.store">Loja</a></p>
+            <p><a href="#depoimentos" data-i18n="footer.faq">FAQ</a></p>
+            <p><a href="#plano" data-i18n="footer.social">Social</a></p>
           </div>
+    
+          <div class="contato">
+            <h3 data-i18n="footer.links">Links</h3>
+            <a href=""><p data-i18n="footer.terms">Termos de uso</p></a>
+            <a href=""><p data-i18n="footer.privacy">Política de Privacidade</p></a>
+            <a href=""><p data-i18n="footer.cookies">Política de Cookies</p></a>
+          </div>
+    
+          <div class="redes-sociais">
+            <h3 data-i18n="footer.socials">Social</h3>
+            <div class="icons">
+              <a target="_blank" href="https://www.instagram.com/spacecloud.gg/"><ion-icon name="logo-instagram"></ion-icon></a>
+            </div>
+          </div>
+        </div>
       </div>
-
+    
       <img class="bg" src="./assets/footer bg.png" alt="">
-    </footer>
+    </footer>    
 
    <!-- Exemplo de surgimento do alerta -->
     <!-- <div class="buttons alertButton">
@@ -805,33 +889,35 @@
     <!-- Estrutura dos alertas -->
         <div class="alert alert-standard">
             <ion-icon name="alert-circle-outline"></ion-icon>
-            <h4><span>Standard</span>: Esse é um alerta padrão</h4>
+            <h4>Standard: Esse é um alerta padrão</h4>
             <ion-icon class="close-alert" name="close-outline"></ion-icon>
         </div>
         <div class="alert alert-info">
             <ion-icon name="information-circle-outline"></ion-icon>
-            <h4><span>Info</span>: Esse é um alerta de informação</h4>
+            <h4>Info: Esse é um alerta de informação</h4>
             <ion-icon class="close-alert" name="close-outline"></ion-icon>
         </div>
         <div class="alert alert-success">
             <ion-icon name="checkmark-circle-outline"></ion-icon>
-            <h4><span>Sucesso</span>: Esse é um alerta de sucesso</h4>
+            <h4>Sucesso: Esse é um alerta de sucesso</h4>
             <ion-icon class="close-alert" name="close-outline"></ion-icon>
         </div>
         <div class="alert alert-warning">
             <ion-icon name="warning-outline"></ion-icon>
-            <h4><span>Alerta</span>: Esse é um alerta de warning</h4>
+            <h4>Alerta: Esse é um alerta de warning</h4>
             <ion-icon class="close-alert" name="close-outline"></ion-icon>
         </div>
         <div class="alert alert-danger">
             <ion-icon name="close-circle-outline"></ion-icon>
-            <h4><span>Danger</span>: Esse é um alerta de perigo</h4>
+            <h4>Danger: Esse é um alerta de perigo</h4>
             <ion-icon class="close-alert" name="close-outline"></ion-icon>
         </div>
     
     <div class="cursor-dot" data-cursor-dot></div>
     <div class="cursor-outline" data-cursor-outline></div>
 
+    <script src="https://unpkg.com/i18next@21.6.12/dist/umd/i18next.js"></script>
+    <script src="https://unpkg.com/i18next-http-backend@1.4.1/i18nextHttpBackend.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

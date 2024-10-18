@@ -1,0 +1,208 @@
+{
+    "navigation": {
+        "home": "Inicio",
+        "services": "Servicios",
+        "store": "Tienda",
+        "faq": "FAQ",
+        "userName": "Nombre de usuario",
+        "panel": "Panel",
+        "settings": "Configuraciones",
+        "notifications": "Notificaciones",
+        "bills": "Facturas",
+        "cart": "Carrito",
+        "machines": "Máquinas",
+        "logout": "Cerrar sesión",
+        "login": "Iniciar sesión",
+        "register": "Registrar"
+      },
+      
+    "header": {
+      "span": "SPACE CLOUD",
+      "h1": "Alto rendimiento en juegos y trabajo",
+      "p": "¡Lo Mejor de Space Cloud, en cualquier lugar!",
+      "button": "SUSCRIBIRSE AHORA"
+    },
+    "features": {
+      "lowLatency": "Baja Latencia",
+      "support": "Soporte 24/7",
+      "security": "Seguridad Avanzada",
+      "upgrade": "Fácil Actualización",
+      "scalability": "Escalabilidad",
+      "backup": "Copias de Seguridad Automáticas",
+      "globalNetwork": "Red Global",
+      "stability": "Estabilidad",
+      "fastConnection": "Conexión Rápida"
+    },
+
+    "services": {
+    "title": "SERVICIOS",
+    "subtitle": "¿Cómo podemos ayudarte?",
+    "card1": {
+      "title": "Soporte al cliente",
+      "description": "Nuestro equipo de soporte está aquí para resolver todas tus necesidades y garantizar una buena experiencia."
+    },
+    "card2": {
+      "title": "Alto rendimiento",
+      "description": "Las mejores máquinas con potencia de procesamiento y velocidad como nunca has visto."
+    },
+    "card3": {
+      "title": "Planes variados",
+      "description": "Opciones variadas desde la recomendada hasta la ideal, para elegir según tus necesidades."
+    },
+    "button": "¡SUSCRÍBETE AHORA!"
+  },
+
+  "video": {
+    "title": "SABER MÁS",
+    "subtitle": "Space Cloud, ¡este es tu futuro!",
+    "button": "¡EMPIEZA AHORA!"
+  },
+
+  "computacao": {
+    "title": "Computación en la nube",
+    "description": "Descubre lo mejor de la nube con máquinas para juegos y trabajos donde y cuando quieras.",
+    "activeUsers": "Usuarios Activos",
+    "button": "¡SUSCRIBIRSE AHORA!"
+  },
+
+  "acessibilidade": {
+    "title": "Accesibilidad",
+    "description": "Prueba nuestros servicios en diversas plataformas, estamos listos para entregar lo mejor en cualquier lugar.",
+    "button": "¡SUSCRIBIRSE AHORA!"
+  },
+
+  "depoimentos": {
+    "title": "TESTIMONIOS",
+    "subtitle": "¿Qué dicen nuestros clientes?",
+    "description": "Mira algunos comentarios hechos por clientes después de unos días disfrutando de nuestros servicios.",
+    "client1": {
+      "quote": "“El servicio es muy bueno, 100% confiable, la entrega de productos es muy rápida y las máquinas son geniales. Recomiendo un plan de 6 núcleos o más si deseas una buena experiencia de juego. Comencé con el plan de 6 núcleos, pero no corría mis juegos bien, así que actualicé a 8 núcleos y cumplió bien con mis necesidades.”",
+      "name": "DaniFull, cliente"
+    },
+    "client2": {
+      "quote": "“Quería poner la máquina a prueba, tomé Nier Automata, que tiene la reputación de estar mal optimizado para PC, y lo llené de mods gráficos, añadí reshade y texturas HD, y el juego habría hecho caer mi PC si no fuera por Space Cloud. Estoy emocionado de poder jugar este maravilloso juego por cuarta vez, gracias, chicos.”",
+      "name": "Justice, cliente."
+    },
+    "client3": {
+      "quote": "“Para quienes preguntan si vale la pena, puedo decir con toda certeza que sí. Máquinas de alta potencia, desde el plan más básico hasta el mejor, y lo mejor es la opción de guardar archivos, lo que ya pone a Space Cloud por delante de muchas nubes; en soporte y servicio, ayudan y resuelven tus problemas rápidamente.”",
+      "name": "Yuri, cliente."
+    },
+    "client4": {
+      "quote": "“Es la mejor VM que he usado. Supera a otras nubes por cosas como no tener cola de inicio de sesión, guardar archivos y tener acceso casi instantáneo. Compré el plan de 4 núcleos, y de todos los juegos que probé, el más pesado fue Warzone, con un rendimiento excelente y 0 retraso. También manejó el emulador de PS2 con facilidad.”",
+      "name": "Felps, cliente."
+    },
+    "client5": {
+      "quote": "“Pido perdón por las veces que critiqué su sistema. La verdad es que juego un juego demasiado pesado incluso para las máquinas de última generación. Todos los servicios de streaming que intenté no pudieron manejarlo, pero su máquina de 16 núcleos es surrealista. Incluso con HDD y no SSD, supera a otras nubes, sin duda, es una PC impresionante.”",
+      "name": "Dilann, cliente."
+    },
+    "client6": {
+      "quote": "“Después de un mes de uso, estoy impresionado con los servicios de Space. El servicio es simplemente increíble; realmente intentan resolver los problemas y son rápidos en eso. Es una buena inversión considerando los precios actuales del hardware, con una jugabilidad increíble, sin lags y buena calidad.”",
+      "name": "Verstappen, cliente."
+    },
+    "client7": {
+      "quote": "“Estos chicos siguen siendo increíbles en el soporte. Mi experiencia de juego es solo éxito. Este comentario es más para la comunidad y el servicio de los chicos dentro. Para alguien tan inexperto como yo, ayudan mucho a entender todo. Felicitaciones al equipo que tienen hoy; mi experiencia con Space es completamente satisfactoria.”",
+      "name": "Menossi, cliente."
+    }
+  },
+
+  "identificacao": {
+    "title": "SPACE CLOUD PARA TI",
+    "subtitle": "La Space Cloud es para ti que eres:",
+    "card1": {
+      "title": "Gamer",
+      "description": "Disfruta de una experiencia de juego sin interrupciones y con el máximo rendimiento, ejecutando los juegos más pesados en calidad ultra, sin preocuparte por tu máquina local."
+    },
+    "card2": {
+      "title": "Desarrollador",
+      "description": "Accede a máquinas robustas, ideales para compilar proyectos complejos, ejecutar entornos virtuales pesados o probar tus aplicaciones con velocidad y eficiencia."
+    },
+    "card3": {
+      "title": "Diseñador/Editor",
+      "description": "Renderiza vídeos y trabaja con gráficos pesados sin retrasos, aprovechando el poder de una máquina hecha para manejar grandes demandas de software creativo."
+    },
+    "card4": {
+      "title": "Ciencia de Datos",
+      "description": "Ejecuta análisis de datos masivos, entrena modelos de IA y realiza simulaciones complejas con los recursos avanzados de nuestras máquinas en la nube."
+    },
+    "card5": {
+      "title": "Streamer",
+      "description": "Transmite en vivo con calidad de punta, sin sobrecargar tu PC local, aprovechando el potente procesamiento de Space Cloud para garantizar una experiencia de streaming fluida."
+    },
+    "card6": {
+      "title": "Emprendedor",
+      "description": "Gestiona y escala tu negocio con total flexibilidad, con máquinas que se adaptan a tu flujo de trabajo y garantizan alto rendimiento para tus demandas de TI."
+    }
+  },
+
+  "loja": {
+    "titulo": "TIENDA",
+    "subtitulo": "Planes y Suscripciones",
+    "planos": {
+      "basico": "GOOGLE BÁSICO",
+      "medio": "GOOGLE MEDIO",
+      "pro": "GOOGLE PRO"
+    },
+    "atributos": {
+      "semfila": "Sin fila",
+      "salvaArquivos": "Guardar Archivos",
+      "gpu": "NVidia Tesla T4",
+      "nucleos6": "6 Núcleos",
+      "nucleos8": "8 Núcleos",
+      "nucleos16": "16 Núcleos",
+      "ram16": "16GB RAM",
+      "ram22": "22GB RAM",
+      "ram32": "32GB RAM",
+      "contaSpot": "Contiene spot"
+    },
+    "botao": {
+      "assinar": "SUBSCRIBIR AHORA",
+      "verTodos": "Ver todos los planes"
+    }
+  },
+
+  "faq": {
+    "span": "FAQ",
+    "title": "Preguntas Frecuentes",
+    "question1": "¿Qué es un 'PC en la nube'?",
+    "answer1": "Un PC en la nube es una máquina virtual, accesible de forma remota a través de su dispositivo, sin limitaciones regionales, que ofrece accesibilidad y comodidad, con todos los servicios y funcionalidades de un ordenador normal, pero sin la necesidad de tener el producto físico en la mano.",
+    "question2": "¿Puedo actualizar el sistema?",
+    "answer2": "No, todos los componentes del sistema, incluidos los controladores, están diseñados para el mejor rendimiento de su máquina; alterar estas configuraciones puede disminuir el rendimiento e incluso romper la máquina. Además, se considera un uso indebido de nuestros servicios.",
+    "question3": "¿Cómo funciona esto?",
+    "answer3": "Nuestro sistema permite que conecte su dispositivo directamente a un ordenador en nuestro servidor; este ordenador está diseñado para ofrecer el mejor rendimiento en sus actividades, como juegos, trabajo y más.",
+    "question4": "¿Funciona en Android y iOS?",
+    "answer4": "Sí, en Android, el primer acceso se puede hacer a través de RDP o VNC y luego usar Moonlight o Parsec. En iOS, el primer acceso también ocurre a través de Remote Desktop o VNC, pero no es posible usar Moonlight y Parsec; la única aplicación de streaming compatible para iOS es Steam Link.",
+    "question5": "¿Puedo jugar a través de RDP o VNC?",
+    "answer5": "No, RDP (Remote Desktop Protocol) y VNC (Virtual Network Computing) se utilizan solo para el primer acceso, lo que permite vincular sus cuentas de Parsec, Moonlight y Steam Link. Después de vincular sus cuentas, debe cerrar RDP o VNC y jugar exclusivamente a través de Parsec, Moonlight o Steam Link.",
+    "question6": "¿Por qué usar un PC en la nube?",
+    "answer6": "Los gastos para tener un ordenador como los de Space Cloud, físicamente en la mano, ascenderían a unos R$12,000, sin contar los gastos de mantenimiento que llegarán con el tiempo de uso, por lo que un PC en la nube es mucho más económico.",
+    "question7": "¿Qué es una instancia Preemptiva?",
+    "answer7": "Las instancias de VM preemptivas son una variante más económica de las VMs estándar porque estas instancias pueden ser interrumpidas por el Compute Engine para recuperar la capacidad de computación y redirigirlas a otras VMs.",
+    "question8": "¿Pierdo mis archivos al apagar la máquina?",
+    "answer8": "No, nuestros servicios incluyen el salvamento de sus archivos de forma 100% segura; solo tiene que almacenar esos archivos y documentos en uno de los discos duros de la máquina, así que sus archivos de juegos, documentos de trabajo y proyectos no se perderán al apagar o reiniciar su máquina.",
+    "question9": "¿Existe algún sistema de cola de inicio de sesión?",
+    "answer9": "No, para hacer su experiencia más cómoda, trabajamos sin colas de espera, así que puede acceder a su máquina cuando y donde quiera sin perder mucho de su tiempo solo para un inicio de sesión."
+  },
+
+  "support": {
+    "title": "¿Tienes alguna pregunta y quieres saber más?",
+    "message": "Ponte en contacto con el equipo de soporte y te responderemos en un plazo de 24 horas.",
+    "button": "SOPORTE"
+  },
+
+  "footer": {
+    "menu": "Menú",
+    "home": "Inicio",
+    "store": "Tienda",
+    "faq": "FAQ",
+    "social": "Social",
+    "links": "Enlaces",
+    "terms": "Términos de uso",
+    "privacy": "Política de privacidad",
+    "cookies": "Política de cookies",
+    "socials": "Social"
+  }
+
+}
+      
+
+  

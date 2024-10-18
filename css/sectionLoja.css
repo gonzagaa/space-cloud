@@ -102,8 +102,13 @@
     margin-bottom: 2rem;
 }
 
-#loja .cards .card h3 span,
-#loja .cards .card.recomendado h3 span {
+#loja .cards .card .price {
+    display: flex;
+    align-items: center;
+}
+
+#loja .cards .card .price span,
+#loja .cards .card.recomendado .price span {
     -webkit-background-clip: initial;
     -webkit-text-fill-color: initial;
     background: transparent;
@@ -116,25 +121,18 @@
     gap: 2rem;
 }
 
-#loja .cards .card .topics p {
-    color: #cec9db;
-    font-size: 1.6rem;
-
+#loja .cards .card .topics .topic {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-#loja .cards .card .topics p ion-icon {
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    border-radius: 50%;
-    padding: .3rem;
-    background: var(--blue);
-    color: #fff;
+#loja .cards .card .topics p {
+    color: #cec9db;
+    font-size: 1.6rem;
 }
 
-#loja .cards .card .topics p img {
+#loja .cards .card .topics .topic img {
     width: 2.8rem;
 }
 
@@ -226,16 +224,20 @@
         background: var(--black-color);
     }
 
-    section#loja .cards .card h3 {
-        font-size: 6rem;
+    section#loja .cards .card .price {
         position: absolute;
         top: 15%;
         left: -3%;
         background: var(--black-color);
     }
 
+    section#loja .cards .card .price h3 {
+        font-size: 6rem;
+        
+    }
+
     section#loja .cards .card .topics {
-        margin-top: 12rem;
+        margin-top: 16rem;
         margin-bottom: 2rem;
         gap: 3rem;
     }

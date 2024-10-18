@@ -205,6 +205,39 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// Tradução
+i18next
+  .use(i18nextHttpBackend)
+  .init({
+    lng: 'pt', // Idioma padrão
+    backend: {
+      loadPath: '/locales/{{lng}}.json' // Caminho dos arquivos de tradução
+    },
+    fallbackLng: 'pt',
+    debug: true
+  }, function(err, t) {
+    updateContent(); // Função para atualizar os textos
+  });
+
+function updateContent() {
+  document.querySelectorAll('[data-i18n]').forEach(function(element) {
+    const key = element.getAttribute('data-i18n');
+    element.innerText = i18next.t(key);
+  });
+}
+
+function changeLanguage(lang) {
+  i18next.changeLanguage(lang, function(err, t) {
+    if (err) return console.error('Erro ao mudar idioma:', err);
+    updateContent(); // Atualiza o conteúdo quando o idioma é trocado
+  });
+}
+
+  
+
+
+
+
 
 
 

@@ -7,6 +7,7 @@ nav {
     height: var(--nav-height);
   
     position: fixed;
+    top: 4rem;
   
     backdrop-filter: blur(10px) saturate(180%);
     -webkit-backdrop-filter: blur(10px) saturate(180%);
@@ -205,7 +206,7 @@ nav {
         width: calc(100% - 200px);
         left: 100px;
         border-radius: 2rem;
-        top: 4rem;
+        top: 6rem;
       }
     
       nav#navigation .close-menu,
