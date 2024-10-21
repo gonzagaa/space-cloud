@@ -1,0 +1,102 @@
+#obrigado {
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#obrigado .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 11;
+}
+
+#obrigado h2 {
+    font-family: "Bai Jamjuree", sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    line-height: 1;
+
+    margin-bottom: 1rem;
+}
+
+#obrigado h2 span {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+#obrigado p {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    font-weight: 400;
+    color: #cec9db;
+
+    margin-bottom: 2rem;
+}
+
+#obrigado .buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#obrigado .buttons a:nth-child(1) button {
+    outline: 1px solid #fff;
+    background: #ffffff16;
+}
+
+#obrigado .buttons button {
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+    background: var(--gradient);
+    border: none;
+}
+
+#obrigado .buttons button:hover {
+    filter: brightness(1.2);
+    box-shadow:  12px 12px 25px #140e1e,
+             -12px -12px 25px #1a1228;
+}
+
+@media (min-width: 1080px) {
+    section#obrigado .wrapper {
+        height: 100%;
+    }
+
+    section#obrigado .content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    section#obrigado h2 {
+        font-size: 6rem;
+        line-height: .9;
+        margin-bottom: 1rem;
+    }
+    
+    section#obrigado p {
+        font-size: 2rem;
+        line-height: 1.3;
+        font-weight: 400;
+        color: #cec9db;
+
+        margin-bottom: 3rem;
+    }
+
+    section#obrigado .buttons a button {
+        font-size: 1.8rem;
+    }
+}
