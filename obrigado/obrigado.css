@@ -10,6 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
     position: relative;
     z-index: 11;
@@ -42,6 +43,7 @@
 
 #obrigado .buttons {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
@@ -94,6 +96,10 @@
         color: #cec9db;
 
         margin-bottom: 3rem;
+    }
+
+    section#obrigado .buttons {
+        flex-direction: row;
     }
 
     section#obrigado .buttons a button {
